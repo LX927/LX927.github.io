@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>JavaScript第七章重点总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第七章  对象    1.对象是单个实物（一个类）的抽象（抽离其特征，形成对象）    2.对象是一个容器，封装了属性和方法。（对象就是一个载体，由属性和方法组成） 创建对象：    1.通过字面量创建        var 对象名 = {            属性名:属性值,            方法名:function(){    方法体;}} 2.通过内置的Object对象创建    v">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript第七章重点总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第七章  对象    1.对象是单个实物（一个类）的抽象（抽离其特征，形成对象）    2.对象是一个容器，封装了属性和方法。（对象就是一个载体，由属性和方法组成） 创建对象：    1.通过字面量创建        var 对象名 = {            属性名:属性值,            方法名:function(){    方法体;}} 2.通过内置的Object对象创建    v">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-01T06:39:03.766Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-JavaScript第七章重点总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2019-12-01T06:37:00.000Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript第七章重点总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第七章  对象<br>    1.对象是单个实物（一个类）的抽象（抽离其特征，形成对象）<br>    2.对象是一个容器，封装了属性和方法。（对象就是一个载体，由属性和方法组成）</p>
+<p>创建对象：<br>    1.通过字面量创建<br>        var 对象名 = {<br>            属性名:属性值,<br>            方法名:function(){<br>    方法体;<br>}<br>}</p>
+<p>2.通过内置的Object对象创建<br>    var 对象名 = new Object();<br>    对象.属性=属性值;<br>    对象.方法名=function(){<br>        方法体;<br>}</p>
+<p>构造函数：就是生成对象的模板，减少相同代码的代码量。就相当于一个类。<br>    function Student(name,studentNum,sex){<br>            //this指代当前生成的对象<br>            //this.name指代当前对象的name属性<br>            //=name传进来的属性值<br>            this.name=name;<br>            this.studentNum=studentNum;<br>            this.sex=sex;<br>            this.hello=function(){<br>        alert(this.name+“说你好”);<br>}<br>}<br>var a = new Student(“小明”,20180306xxxx,”男”);</p>
+<p>访问（调用）对象属性和方法：<br>console.log-F12在浏览器控制台输出<br>document.write–在HTML页面上输出<br>    alert(对象名.属性名)-通过弹出框输出<br>    对象名[“属性名”]</p>
+<pre><code>对象名.方法名();</code></pre><p>var xiaohong = new Object();<br>xiaohong.sex=”女”;<br>xiaohong.age=18;<br>xiaohong.name=”小红”;<br>xiaohong.eat=function(){<br>        alert(“一日三餐”);<br>}</p>
+<p>属性的简洁表示法：<br>var sex=”女”;<br>var age=18;<br>var name=”小红”;<br>var xiaohong={sex,age,name,eat(){alert(“一日三餐”);<br>}}</p>
+<p>原型与原型链：<br>原型：JavaScript的每个对象都继承另一个对象，后者父对象称为“原型对象”。除了null之外，都有原型对象。<br>类名.prototype</p>
+<p>继承：如果自己没有某些属性和方法，就调用父对象的属性和方法。<br>多态：如果自己和父对象都有某些属性和方法，优先调用自己的属性和方法。（重载）</p>
+<p>遍历对象：<br>for in结构来遍历对象：<br>x代表此对象所有的属性名和方法名。<br>对象名[x]代表此对象所有的属性值和方法体。<br>for(var  x  in 对象名){<br>    console.log(x+”=”+对象名[x]);<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck3mmx9a40003p0tfho11fj57" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/12/01/xo-blog-master/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">xo/blog (master)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/">JavaScript第七章重点总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/01/xo-blog-master/">xo/blog (master)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第一章总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">http常见错误</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/">jsp第六次课</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

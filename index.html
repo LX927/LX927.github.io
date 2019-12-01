@@ -61,6 +61,131 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-JavaScript第七章重点总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2019-12-01T06:37:00.000Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/">JavaScript第七章重点总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第七章  对象<br>    1.对象是单个实物（一个类）的抽象（抽离其特征，形成对象）<br>    2.对象是一个容器，封装了属性和方法。（对象就是一个载体，由属性和方法组成）</p>
+<p>创建对象：<br>    1.通过字面量创建<br>        var 对象名 = {<br>            属性名:属性值,<br>            方法名:function(){<br>    方法体;<br>}<br>}</p>
+<p>2.通过内置的Object对象创建<br>    var 对象名 = new Object();<br>    对象.属性=属性值;<br>    对象.方法名=function(){<br>        方法体;<br>}</p>
+<p>构造函数：就是生成对象的模板，减少相同代码的代码量。就相当于一个类。<br>    function Student(name,studentNum,sex){<br>            //this指代当前生成的对象<br>            //this.name指代当前对象的name属性<br>            //=name传进来的属性值<br>            this.name=name;<br>            this.studentNum=studentNum;<br>            this.sex=sex;<br>            this.hello=function(){<br>        alert(this.name+“说你好”);<br>}<br>}<br>var a = new Student(“小明”,20180306xxxx,”男”);</p>
+<p>访问（调用）对象属性和方法：<br>console.log-F12在浏览器控制台输出<br>document.write–在HTML页面上输出<br>    alert(对象名.属性名)-通过弹出框输出<br>    对象名[“属性名”]</p>
+<pre><code>对象名.方法名();</code></pre><p>var xiaohong = new Object();<br>xiaohong.sex=”女”;<br>xiaohong.age=18;<br>xiaohong.name=”小红”;<br>xiaohong.eat=function(){<br>        alert(“一日三餐”);<br>}</p>
+<p>属性的简洁表示法：<br>var sex=”女”;<br>var age=18;<br>var name=”小红”;<br>var xiaohong={sex,age,name,eat(){alert(“一日三餐”);<br>}}</p>
+<p>原型与原型链：<br>原型：JavaScript的每个对象都继承另一个对象，后者父对象称为“原型对象”。除了null之外，都有原型对象。<br>类名.prototype</p>
+<p>继承：如果自己没有某些属性和方法，就调用父对象的属性和方法。<br>多态：如果自己和父对象都有某些属性和方法，优先调用自己的属性和方法。（重载）</p>
+<p>遍历对象：<br>for in结构来遍历对象：<br>x代表此对象所有的属性名和方法名。<br>对象名[x]代表此对象所有的属性值和方法体。<br>for(var  x  in 对象名){<br>    console.log(x+”=”+对象名[x]);<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck3mmx9a40003p0tfho11fj57" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-xo-blog-master" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/xo-blog-master/" class="article-date">
+  <time datetime="2019-12-01T06:35:13.000Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/01/xo-blog-master/">xo/blog (master)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/xo-blog-master/" data-id="ck3mmx9ab000ap0tfeoxp8cad" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JavaScript第一章总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2019-12-01T06:34:18.000Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第一章总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JavaScript第一章 概述<br>JavaScript特点：<br>    1.向HTMl页面添加交互行为（如注册验证）<br>    2.属于弱类型语言（任何类型变量都用var声明）<br>    3.编写客户端脚本（写在页面上，对网站页面起作用）<br>    4.解释型语言，边执行边解释（不需要编译）</p>
+<p>JavaScript诞生于1995年，由网景公司研发。</p>
+<p>JavaScript由三部分组成：ECMAScript（行业标准、规范）、BOM（浏览器对象）、DOM（文档对象）</p>
+<p>ES6=ECMAScript2015<br>ES7、ES8都是升级的高版本。</p>
+<p>JavaScript引入到网页中的三种方式：<br>1、<script><br>        js代码<br></script><br>2、<script src=”外部js文件路径”/><br>   外部js文件中的代码不需要<script></script>标签<br>3、在HTML属性中直接引入（通过事件触发js特效）<br>    &lt;input type=”button” value=”弹出消息框” onclick=”alert(‘hello world’!)”&gt;</p>
+<p>基本语法：<br>    声明变量都用var关键字。<br>标识符命名规则:<br>    1.不能是关键字和保留字（现在不是关键字，随着版本更新，可能会被当做关键字的字符）<br>    2.只能包括数字、字母、_、$<br>    3.不能以数字开头</p>
+<p>js中三种对话框：<br>1.alert();只用来提示，没有返回值<br>2.confirm();确定或取消，返回true或false<br>3.prompt(提示信息,默认值);接收用户输入的信息，返回值是用户输入的信息，若没有输入，返回默认值。如果点击取消或×，返回null。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck3mmx9a00001p0tf45vs4irx" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-http常见错误" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="article-date">
@@ -89,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="ck3mlnxfn0003s8tf5tkz8i4h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="ck3mmx9a60005p0tfe6btaymz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -351,7 +476,7 @@ for(var key in p){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/" data-id="ck3mlnxfq0005s8tfgcarag95" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/" data-id="ck3mmx9a90008p0tf79c1hqr8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -658,7 +783,7 @@ for(var key in p){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/" data-id="ck3mlnxfw000as8tf169hh806" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/" data-id="ck3mmx9ac000bp0tf3cff2lwv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -854,7 +979,7 @@ for(var key in p){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" data-id="ck3mlnxfj0001s8tfdz045usx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" data-id="ck3mmx9a30002p0tf7mdggsb6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1059,7 +1184,7 @@ email varchar(50)</code></pre> );</li>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mlnxfs0006s8tffcbm12mx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mmx9a80007p0tf22ck5321" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1233,7 +1358,7 @@ response.addCookie(c);</code></pre><ol start="2">
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/13/jsp%E7%AC%AC%E5%9B%9B%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mlnxft0007s8tf3a6h97il" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/13/jsp%E7%AC%AC%E5%9B%9B%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mmx9aa0009p0tf0sfb2hoq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1380,890 +1505,7 @@ request域：代表一次请求的范围，一般用于请求转发的多个资�
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89-1/" data-id="ck3mlnxfw000bs8tf3rz64czr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-动态网站开发第三次课讲义" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" class="article-date">
-  <time datetime="2019-11-06T10:49:20.000Z" itemprop="datePublished">2019-11-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/">动态网站开发第三次课讲义</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>动态网站开发第三次课讲义<br>一、学习目标<br>1、掌握http协议之响应部分<br>2、熟练掌握Response的相关 API （重定向，路径，输出流）<br>3、掌握ServletContext的常用API<br>4、完成文件下载案例<br>二、具体讲解<br>   2.1、掌握http协议之响应部分</p>
-<ol>
-<li>请求消息：客户端发送给服务器端的数据<br> 数据格式：<pre><code>1. 请求行
-2. 请求头
-3. 请求空行
-4. 请求体</code></pre><ol start="2">
-<li>响应消息：服务器端发送给客户端的数据<br>数据格式：<ol>
-<li>响应行<ol>
-<li>组成：协议/版本 响应状态码 状态码描述</li>
-<li>响应状态码：服务器告诉客户端浏览器本次请求和响应的一个状态。<ol>
-<li>状态码都是3位数字 </li>
-<li>分类：</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>1xx：服务器就收客户端消息，但没有接受完成，等待一段时       间后，发送1xx多状态码<pre><code>2. 2xx：成功。代表：200
-3. 3xx：重定向。代表：302(重定向)，304(访问缓存)
-4. 4xx：客户端错误。
-    代表：
-        404（请求路径没有对应的资源） 
-        405：请求方式没有对应的doXxx方法
-5. 5xx：服务器端错误。代表：500(服务器内部出现异常)        </code></pre><ol start="2">
-<li>响应头：<ol>
-<li>格式：头名称： 值</li>
-<li>常见的响应头：<ol>
-<li>Content-Type：服务器告诉客户端本次响应体数据格式以及编码格式</li>
-<li>Content-disposition：服务器告诉客户端以什么格式打开响应体数据<br>MIME类型<br>值：<br>  in-line:默认值,在当前页面内打开<br>  attachment;filename=xxx：以附件形式打开响应体。文件下载</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>响应空行</li>
-<li>响应体:传输的数据<br>响应字符串格式<br>HTTP/1.1 200 OK<br>Content-Type: text/html;charset=UTF-8<br>Content-Length: 101<br>Date: Wed, 06 Jun 2018 07:08:42 GMT<html>
-<head>
- <title>$Title$</title>
-</head>
-<body>
-hello , response
-</body>
-</html>
-
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<p>2.2、熟练掌握Response的相关 API （重定向，路径，输出流）<br>    Response对象<br>       功能：设置响应消息<br>        1. 设置响应行<br>            1. 格式：HTTP/1.1 200 ok<br>            2. 设置状态码：setStatus(int sc)<br>        2. 设置响应头：setHeader(String name, String value)<br>        3. 设置响应体：<br>            使用步骤：<br>                1. 获取输出流<br>                    字符输出流：PrintWriter getWriter()<br>                    字节输出流：ServletOutputStream getOutputStream()<br>                2. 使用输出流，将数据输出到客户端浏览器<br>    案例：<br>        1. 完成重定向<br>            重定向：资源跳转的方式，重定向为向另外一个servlet<br>                    或另外一个jsp发送一个新的请求<br>            代码实现：<br>              1. 设置状态码为302<br>                response.setStatus(302);<br>              2.设置响应头location<br>                response.setHeader(“location”,”/day15/responseDemo2”);<br>                //简单的重定向方法<br>                response.sendRedirect(“/day15/responseDemo2”);<br>             重定向的特点:redirect<br>                1. 地址栏发生变化<br>                2. 重定向可以访问其他站点(服务器)的资源<br>                3. 重定向是两次请求。不能使用request对象来共享数据<br>             转发的特点：forward<br>                1. 转发地址栏路径不变<br>                2. 转发只能访问当前服务器下的资源<br>                3. 转发是一次请求，可以使用request对象来共享数据<br>             forward 和  redirect 区别<br>              路径写法：<br>                1. 路径分类<br>                    1. 相对路径：通过相对路径不可以确定唯一资源<br>                        如：./index.html<br>                          不以/开头，以.开头路径<br>                          规则：找到当前资源和目标资源之间的相对位置关系<br>                            ./：当前目录<br>                            ../:后退一级目录<br>                    2. 绝对路径：通过绝对路径可以确定唯一资源<br>    如：<a href="http://localhost/day15/responseDemo2" target="_blank" rel="noopener">http://localhost/day15/responseDemo2</a>             /day15/responseDemo2     以/开头的路径<br>规则：判断定义的路径是给谁用的？判断请求将来从哪儿发出<br>                         给客户端浏览器使用：需要加虚拟目录(项目的访问路径)<br>                                建议虚拟目录动态获取：request.getContextPath()<br>                                <a> , <form> 重定向…<br>                         给服务器使用：不需要加虚拟目录<br>                                转发路径<br>        2. 服务器输出字符数据到浏览器<br>             步骤：<br>                1. 获取字符输出流<br>                2. 输出数据<br>             注意：<br>                乱码问题：<br>                  1. PrintWriter pw = response.getWriter();获取的流的默认编码是ISO-8859-1<br>              2. 设置该流的默认编码<br>              //简单的形式，设置编码，是在获取流之前设置<br>                 response.setContentType(“text/html;charset=utf-8”);<br>        3. 服务器输出字节数据到浏览器<br>            步骤：<br>                1. 获取字节输出流<br>                2. 输出数据<br>        4. 验证码<br>            1. 本质：图片<br>            2. 目的：防止恶意表单注册</p>
-<p>2.3、掌握ServletContext的常用API<br>Servlet有四大域对象，pageContext request session application<br>request       HttpServletRequest<br>session       HttpSession<br>application    ServletContext</p>
-<ol>
-<li>概念：代表整个web应用，可以和程序的容器(服务器)来通信<ol start="2">
-<li>获取：<ol>
-<li>通过request对象获取<br> request.getServletContext();</li>
-<li>通过HttpServlet获取<br> this.getServletContext();</li>
-</ol>
-</li>
-<li>功能：<ol>
-<li>获取MIME类型：<ul>
-<li>MIME类型:在互联网通信过程中定义的一种文件数据类型<ul>
-<li>格式： 大类型/小类型   text/html        image/jpeg</li>
-</ul>
-</li>
-<li>获取：String getMimeType(String file)  </li>
-</ul>
-</li>
-<li>域对象：共享数据<ol>
-<li>setAttribute(String name,Object value)</li>
-<li>getAttribute(String name)</li>
-<li>removeAttribute(String name)</li>
-</ol>
-<ul>
-<li>ServletContext对象范围：所有用户所有请求的数据</li>
-</ul>
-</li>
-<li>获取文件的真实(服务器)路径<ol>
-<li>方法：String getRealPath(String path)<br>String b = context.getRealPath(“/b.txt”);//web目录下资源访问<br>System.out.println(b);<br>String c = context.getRealPath(“/WEB-INF/c.txt”);//WEB-INF目录下的资源访问<br>System.out.println(c);<br>String a = context.getRealPath(“/WEB-INF/classes/a.txt”);//src目录下的资源访问<br>System.out.println(a);</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>4、完成文件下载案例<pre><code>文件下载需求：
-  1. 页面显示超链接
-  2. 点击超链接后弹出下载提示框
-  3. 完成图片文件下载
-分析：
-  1. 超链接指向的资源如果能够被浏览器解析，则在浏览器中展示，如果不能解析，则弹出下载提示框。不满足需求
-  2. 任何资源都必须弹出下载提示框
-  3. 使用响应头设置资源的打开方式：
-   content-disposition:attachment;filename=xxx
-步骤：
-  1. 定义页面，编辑超链接href属性，指向Servlet，传递资源名称filename
-  2. 定义Servlet
-      1. 获取文件名称
-      2. 使用字节输入流加载文件进内存
-      3. 指定response的响应头： content-disposition:attachment;filename=xxx
-      4. 将数据写出到response输出流
-问题：
-    中文文件问题
-       解决思路：
-          1. 获取客户端使用的浏览器版本信息
-          2. 根据不同的版本信息，设置filename的编码方式不同</code></pre></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mlnxfu0008s8tf8w0gcl63" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-xml笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/24/xml%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2019-10-24T01:39:31.000Z" itemprop="datePublished">2019-10-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/24/xml%E7%AC%94%E8%AE%B0/">xml笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h1><pre><code>1. XML
-    1. 概念
-    2. 语法
-    3. 解析</code></pre><h2 id="XML："><a href="#XML：" class="headerlink" title="XML："></a>XML：</h2><pre><code>1. 概念：Extensible Markup Language 可扩展标记语言
-    * 可扩展：标签都是自定义的。 &lt;user&gt;  &lt;student&gt;
-
-    * 功能
-        * 存储数据
-            1. 配置文件
-            2. 在网络中传输
-    * xml与html的区别
-        1. xml标签都是自定义的，html标签是预定义。
-        2. xml的语法严格，html语法松散
-        3. xml是存储数据的，html是展示数据
-
-    * w3c:万维网联盟
-
-2. 语法：
-    * 基本语法：
-        1. xml文档的后缀名 .xml
-        2. xml第一行必须定义为文档声明
-        3. xml文档中有且仅有一个根标签
-        4. 属性值必须使用引号(单双都可)引起来
-        5. 标签必须正确关闭
-        6. xml标签名称区分大小写
-    * 快速入门：
-        &lt;?xml version=&apos;1.0&apos; ?&gt;
-        &lt;users&gt;
-            &lt;user id=&apos;1&apos;&gt;
-                &lt;name&gt;zhangsan&lt;/name&gt;
-                &lt;age&gt;23&lt;/age&gt;
-                &lt;gender&gt;male&lt;/gender&gt;
-                &lt;br/&gt;
-            &lt;/user&gt;
-
-            &lt;user id=&apos;2&apos;&gt;
-                &lt;name&gt;lisi&lt;/name&gt;
-                &lt;age&gt;24&lt;/age&gt;
-                &lt;gender&gt;female&lt;/gender&gt;
-            &lt;/user&gt;
-        &lt;/users&gt;
-
-    * 组成部分：
-        1. 文档声明
-            1. 格式：&lt;?xml 属性列表 ?&gt;
-            2. 属性列表：
-                * version：版本号，必须的属性
-                * encoding：编码方式。告知解析引擎当前文档使用的字符集，默认值：ISO-8859-1
-                * standalone：是否独立
-                    * 取值：
-                        * yes：不依赖其他文件
-                        * no：依赖其他文件
-        2. 指令(了解)：结合css的
-            * &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;a.css&quot; ?&gt;
-        3. 标签：标签名称自定义的
-            * 规则：
-                * 名称可以包含字母、数字以及其他的字符 
-                * 名称不能以数字或者标点符号开始 
-                * 名称不能以字母 xml（或者 XML、Xml 等等）开始 
-                * 名称不能包含空格 
-
-        4. 属性：
-            id属性值唯一
-        5. 文本：
-            * CDATA区：在该区域中的数据会被原样展示
-                * 格式：  &lt;![CDATA[ 数据 ]]&gt;
-
-
-    * 约束：规定xml文档的书写规则
-        * 作为框架的使用者(程序员)：
-            1. 能够在xml中引入约束文档
-            2. 能够简单的读懂约束文档
-
-        * 分类：
-            1. DTD:一种简单的约束技术
-            2. Schema:一种复杂的约束技术
-
-
-        * DTD：
-            * 引入dtd文档到xml文档中
-                * 内部dtd：将约束规则定义在xml文档中
-                * 外部dtd：将约束的规则定义在外部的dtd文件中
-                    * 本地：&lt;!DOCTYPE 根标签名 SYSTEM &quot;dtd文件的位置&quot;&gt;
-                    * 网络：&lt;!DOCTYPE 根标签名 PUBLIC &quot;dtd文件名字&quot; &quot;dtd文件的位置URL&quot;&gt;
-
-
-        * Schema:
-            * 引入：
-                1.填写xml文档的根元素
-                2.引入xsi前缀.  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-                3.引入xsd文件命名空间.  xsi:schemaLocation=&quot;http://www.itcast.cn/xml  student.xsd&quot;
-                4.为每一个xsd约束声明一个前缀,作为标识  xmlns=&quot;http://www.itcast.cn/xml&quot; 
-
-            &lt;students   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-                xmlns=&quot;http://www.itcast.cn/xml&quot;
-                xsi:schemaLocation=&quot;http://www.itcast.cn/xml  student.xsd&quot;&gt;
-
-
-
-3. 解析：操作xml文档，将文档中的数据读取到内存中
-    * 操作xml文档
-        1. 解析(读取)：将文档中的数据读取到内存中
-        2. 写入：将内存中的数据保存到xml文档中。持久化的存储
-
-    * 解析xml的方式：
-        1. DOM：将标记语言文档一次性加载进内存，在内存中形成一颗dom树
-            * 优点：操作方便，可以对文档进行CRUD的所有操作
-            * 缺点：占内存
-        2. SAX：逐行读取，基于事件驱动的。
-            * 优点：不占内存。
-            * 缺点：只能读取，不能增删改
-
-
-
-    * xml常见的解析器：
-        1. JAXP：sun公司提供的解析器，支持dom和sax两种思想
-        2. DOM4J：一款非常优秀的解析器
-        3. Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
-        4. PULL：Android操作系统内置的解析器，sax方式的。
-
-
-    * Jsoup：jsoup 是一款Java 的HTML解析器，可直接解析某个URL地址、HTML文本内容。它提供了一套非常省力的API，可通过DOM，CSS以及类似于jQuery的操作方法来取出和操作数据。
-        * 快速入门：
-            * 步骤：
-                1. 导入jar包
-                2. 获取Document对象
-                3. 获取对应的标签Element对象
-                4. 获取数据
-
-        * 代码：
-             //2.1获取student.xml的path
-            String path = JsoupDemo1.class.getClassLoader().getResource(&quot;student.xml&quot;).getPath();
-            //2.2解析xml文档，加载文档进内存，获取dom树---&gt;Document
-            Document document = Jsoup.parse(new File(path), &quot;utf-8&quot;);
-            //3.获取元素对象 Element
-            Elements elements = document.getElementsByTag(&quot;name&quot;);
-
-            System.out.println(elements.size());
-            //3.1获取第一个name的Element对象
-            Element element = elements.get(0);
-            //3.2获取数据
-            String name = element.text();
-            System.out.println(name);
-
-    * 对象的使用：
-        1. Jsoup：工具类，可以解析html或xml文档，返回Document
-            * parse：解析html或xml文档，返回Document
-                * parse​(File in, String charsetName)：解析xml或html文件的。
-                * parse​(String html)：解析xml或html字符串
-                * parse​(URL url, int timeoutMillis)：通过网络路径获取指定的html或xml的文档对象
-        2. Document：文档对象。代表内存中的dom树
-            * 获取Element对象
-                * getElementById​(String id)：根据id属性值获取唯一的element对象
-                * getElementsByTag​(String tagName)：根据标签名称获取元素对象集合
-                * getElementsByAttribute​(String key)：根据属性名称获取元素对象集合
-                * getElementsByAttributeValue​(String key, String value)：根据对应的属性名和属性值获取元素对象集合
-        3. Elements：元素Element对象的集合。可以当做 ArrayList&lt;Element&gt;来使用
-        4. Element：元素对象
-            1. 获取子元素对象
-                * getElementById​(String id)：根据id属性值获取唯一的element对象
-                * getElementsByTag​(String tagName)：根据标签名称获取元素对象集合
-                * getElementsByAttribute​(String key)：根据属性名称获取元素对象集合
-                * getElementsByAttributeValue​(String key, String value)：根据对应的属性名和属性值获取元素对象集合
-
-            2. 获取属性值
-                * String attr(String key)：根据属性名称获取属性值
-            3. 获取文本内容
-                * String text():获取文本内容
-                * String html():获取标签体的所有内容(包括字标签的字符串内容)
-        5. Node：节点对象
-            * 是Document和Element的父类
-
-
-    * 快捷查询方式：
-        1. selector:选择器
-            * 使用的方法：Elements    select​(String cssQuery)
-                * 语法：参考Selector类中定义的语法
-        2. XPath：XPath即为XML路径语言，它是一种用来确定XML（标准通用标记语言的子集）文档中某部分位置的语言
-            * 使用Jsoup的Xpath需要额外导入jar包。
-            * 查询w3cshool参考手册，使用xpath的语法完成查询
-            * 代码：
-                //1.获取student.xml的path
-                String path = JsoupDemo6.class.getClassLoader().getResource(&quot;student.xml&quot;).getPath();
-                //2.获取Document对象
-                Document document = Jsoup.parse(new File(path), &quot;utf-8&quot;);
-
-                //3.根据document对象，创建JXDocument对象
-                JXDocument jxDocument = new JXDocument(document);
-
-                //4.结合xpath语法查询
-                //4.1查询所有student标签
-                List&lt;JXNode&gt; jxNodes = jxDocument.selN(&quot;//student&quot;);
-                for (JXNode jxNode : jxNodes) {
-                    System.out.println(jxNode);
-                }
-
-                System.out.println(&quot;--------------------&quot;);
-
-                //4.2查询所有student标签下的name标签
-                List&lt;JXNode&gt; jxNodes2 = jxDocument.selN(&quot;//student/name&quot;);
-                for (JXNode jxNode : jxNodes2) {
-                    System.out.println(jxNode);
-                }
-
-                System.out.println(&quot;--------------------&quot;);
-
-                //4.3查询student标签下带有id属性的name标签
-                List&lt;JXNode&gt; jxNodes3 = jxDocument.selN(&quot;//student/name[@id]&quot;);
-                for (JXNode jxNode : jxNodes3) {
-                    System.out.println(jxNode);
-                }
-                System.out.println(&quot;--------------------&quot;);
-                //4.4查询student标签下带有id属性的name标签 并且id属性值为itcast
-
-                List&lt;JXNode&gt; jxNodes4 = jxDocument.selN(&quot;//student/name[@id=&apos;itcast&apos;]&quot;);
-                for (JXNode jxNode : jxNodes4) {
-                    System.out.println(jxNode);
-                }</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/xml%E7%AC%94%E8%AE%B0/" data-id="ck3mlnxfv0009s8tf69tg7kfl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-jdbc笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time datetime="2019-10-23T11:17:47.000Z" itemprop="datePublished">2019-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/">jdbc笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h1><pre><code>1. JDBC基本概念
-2. 快速入门
-3. 对JDBC中各个接口和类详解</code></pre><h2 id="JDBC："><a href="#JDBC：" class="headerlink" title="JDBC："></a>JDBC：</h2><pre><code>1. 概念：Java DataBase Connectivity  Java 数据库连接， Java语言操作数据库
-    * JDBC本质：其实是官方（sun公司）定义的一套操作所有关系型数据库的规则，即接口。各个数据库厂商去实现这套接口，提供数据库驱动jar包。我们可以使用这套接口（JDBC）编程，真正执行的代码是驱动jar包中的实现类。
-
-2. 快速入门：
-    * 步骤：
-        1. 导入驱动jar包 mysql-connector-java-5.1.37-bin.jar
-            1.复制mysql-connector-java-5.1.37-bin.jar到项目的libs目录下
-            2.右键--&gt;Add As Library
-        2. 注册驱动
-        3. 获取数据库连接对象 Connection
-        4. 定义sql
-        5. 获取执行sql语句的对象 Statement
-        6. 执行sql，接受返回结果
-        7. 处理结果
-        8. 释放资源
-
-    * 代码实现：
-          //1. 导入驱动jar包
-        //2.注册驱动
-        Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
-        //3.获取数据库连接对象
-        Connection conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/db3&quot;, &quot;root&quot;, &quot;root&quot;);
-        //4.定义sql语句
-        String sql = &quot;update account set balance = 500 where id = 1&quot;;
-        //5.获取执行sql的对象 Statement
-        Statement stmt = conn.createStatement();
-        //6.执行sql
-        int count = stmt.executeUpdate(sql);
-        //7.处理结果
-        System.out.println(count);
-        //8.释放资源
-        stmt.close();
-        conn.close();
-
-3. 详解各个对象：
-    1. DriverManager：驱动管理对象
-        * 功能：
-            1. 注册驱动：告诉程序该使用哪一个数据库驱动jar
-                static void registerDriver(Driver driver) :注册与给定的驱动程序 DriverManager 。 
-                写代码使用：  Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
-                通过查看源码发现：在com.mysql.jdbc.Driver类中存在静态代码块
-                 static {
-                        try {
-                            java.sql.DriverManager.registerDriver(new Driver());
-                        } catch (SQLException E) {
-                            throw new RuntimeException(&quot;Can&apos;t register driver!&quot;);
-                        }
-                    }
-
-                注意：mysql5之后的驱动jar包可以省略注册驱动的步骤。
-            2. 获取数据库连接：
-                * 方法：static Connection getConnection(String url, String user, String password) 
-                * 参数：
-                    * url：指定连接的路径
-                        * 语法：jdbc:mysql://ip地址(域名):端口号/数据库名称
-                        * 例子：jdbc:mysql://localhost:3306/db3
-                        * 细节：如果连接的是本机mysql服务器，并且mysql服务默认端口是3306，则url可以简写为：jdbc:mysql:///数据库名称
-                    * user：用户名
-                    * password：密码 
-    2. Connection：数据库连接对象
-        1. 功能：
-            1. 获取执行sql 的对象
-                * Statement createStatement()
-                * PreparedStatement prepareStatement(String sql)  
-            2. 管理事务：
-                * 开启事务：setAutoCommit(boolean autoCommit) ：调用该方法设置参数为false，即开启事务
-                * 提交事务：commit() 
-                * 回滚事务：rollback() 
-    3. Statement：执行sql的对象
-        1. 执行sql
-            1. boolean execute(String sql) ：可以执行任意的sql 了解 
-            2. int executeUpdate(String sql) ：执行DML（insert、update、delete）语句、DDL(create，alter、drop)语句
-                * 返回值：影响的行数，可以通过这个影响的行数判断DML语句是否执行成功 返回值&gt;0的则执行成功，反之，则失败。
-            3. ResultSet executeQuery(String sql)  ：执行DQL（select)语句
-        2. 练习：
-            1. account表 添加一条记录
-            2. account表 修改记录
-            3. account表 删除一条记录
-
-            代码：
-                Statement stmt = null;
-                Connection conn = null;
-                try {
-                    //1. 注册驱动
-                    Class.forName(&quot;com.mysql.jdbc.Driver&quot;);
-                    //2. 定义sql
-                    String sql = &quot;insert into account values(null,&apos;王五&apos;,3000)&quot;;
-                    //3.获取Connection对象
-                    conn = DriverManager.getConnection(&quot;jdbc:mysql:///db3&quot;, &quot;root&quot;, &quot;root&quot;);
-                    //4.获取执行sql的对象 Statement
-                    stmt = conn.createStatement();
-                    //5.执行sql
-                    int count = stmt.executeUpdate(sql);//影响的行数
-                    //6.处理结果
-                    System.out.println(count);
-                    if(count &gt; 0){
-                        System.out.println(&quot;添加成功！&quot;);
-                    }else{
-                        System.out.println(&quot;添加失败！&quot;);
-                    }
-
-                } catch (ClassNotFoundException e) {
-                    e.printStackTrace();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }finally {
-                    //stmt.close();
-                    //7. 释放资源
-                    //避免空指针异常
-                    if(stmt != null){
-                        try {
-                            stmt.close();
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    if(conn != null){
-                        try {
-                            conn.close();
-                        } catch (SQLException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
-    4. ResultSet：结果集对象,封装查询结果
-        * boolean next(): 游标向下移动一行，判断当前行是否是最后一行末尾(是否有数据)，如果是，则返回false，如果不是则返回true
-        * getXxx(参数):获取数据
-            * Xxx：代表数据类型   如： int getInt() ,    String getString()
-            * 参数：
-                1. int：代表列的编号,从1开始   如： getString(1)
-                2. String：代表列名称。 如： getDouble(&quot;balance&quot;)
-
-        * 注意：
-            * 使用步骤：
-                1. 游标向下移动一行
-                2. 判断是否有数据
-                3. 获取数据
-
-               //循环判断游标是否是最后一行末尾。
-                while(rs.next()){
-                    //获取数据
-                    //6.2 获取数据
-                    int id = rs.getInt(1);
-                    String name = rs.getString(&quot;name&quot;);
-                    double balance = rs.getDouble(3);
-
-                    System.out.println(id + &quot;---&quot; + name + &quot;---&quot; + balance);
-                }
-
-        * 练习：
-            * 定义一个方法，查询emp表的数据将其封装为对象，然后装载集合，返回。
-                1. 定义Emp类
-                2. 定义方法 public List&lt;Emp&gt; findAll(){}
-                3. 实现方法 select * from emp;
-
-    5. PreparedStatement：执行sql的对象
-        1. SQL注入问题：在拼接sql时，有一些sql的特殊关键字参与字符串的拼接。会造成安全性问题
-            1. 输入用户随便，输入密码：a&apos; or &apos;a&apos; = &apos;a
-            2. sql：select * from user where username = &apos;fhdsjkf&apos; and password = &apos;a&apos; or &apos;a&apos; = &apos;a&apos; 
-
-        2. 解决sql注入问题：使用PreparedStatement对象来解决
-        3. 预编译的SQL：参数使用?作为占位符
-        4. 步骤：
-            1. 导入驱动jar包 mysql-connector-java-5.1.37-bin.jar
-            2. 注册驱动
-            3. 获取数据库连接对象 Connection
-            4. 定义sql
-                * 注意：sql的参数使用？作为占位符。 如：select * from user where username = ? and password = ?;
-            5. 获取执行sql语句的对象 PreparedStatement  Connection.prepareStatement(String sql) 
-            6. 给？赋值：
-                * 方法： setXxx(参数1,参数2)
-                    * 参数1：？的位置编号 从1 开始
-                    * 参数2：？的值
-            7. 执行sql，接受返回结果，不需要传递sql语句
-            8. 处理结果
-            9. 释放资源
-
-        5. 注意：后期都会使用PreparedStatement来完成增删改查的所有操作
-            1. 可以防止SQL注入
-            2. 效率更高</code></pre><h2 id="抽取JDBC工具类-：-JDBCUtils"><a href="#抽取JDBC工具类-：-JDBCUtils" class="headerlink" title="抽取JDBC工具类 ： JDBCUtils"></a>抽取JDBC工具类 ： JDBCUtils</h2><pre><code>* 目的：简化书写
-* 分析：
-    1. 注册驱动也抽取
-    2. 抽取一个方法获取连接对象
-        * 需求：不想传递参数（麻烦），还得保证工具类的通用性。
-        * 解决：配置文件
-            jdbc.properties
-                url=
-                user=
-                password=
-
-
-    3. 抽取一个方法释放资源
-
-* 代码实现：
-    public class JDBCUtils {
-    private static String url;
-    private static String user;
-    private static String password;
-    private static String driver;
-    /**
-     * 文件的读取，只需要读取一次即可拿到这些值。使用静态代码块
-     */
-    static{
-        //读取资源文件，获取值。
-
-        try {
-            //1. 创建Properties集合类。
-            Properties pro = new Properties();
-
-            //获取src路径下的文件的方式---&gt;ClassLoader 类加载器
-            ClassLoader classLoader = JDBCUtils.class.getClassLoader();
-            URL res  = classLoader.getResource(&quot;jdbc.properties&quot;);
-            String path = res.getPath();
-            System.out.println(path);///D:/IdeaProjects/itcast/out/production/day04_jdbc/jdbc.properties
-            //2. 加载文件
-           // pro.load(new FileReader(&quot;D:\\IdeaProjects\\itcast\\day04_jdbc\\src\\jdbc.properties&quot;));
-            pro.load(new FileReader(path));
-
-            //3. 获取数据，赋值
-            url = pro.getProperty(&quot;url&quot;);
-            user = pro.getProperty(&quot;user&quot;);
-            password = pro.getProperty(&quot;password&quot;);
-            driver = pro.getProperty(&quot;driver&quot;);
-            //4. 注册驱动
-            Class.forName(driver);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    /**
-     * 获取连接
-     * @return 连接对象
-     */
-    public static Connection getConnection() throws SQLException {
-
-        return DriverManager.getConnection(url, user, password);
-    }
-
-    /**
-     * 释放资源
-     * @param stmt
-     * @param conn
-     */
-    public static void close(Statement stmt,Connection conn){
-        if( stmt != null){
-            try {
-                stmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if( conn != null){
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-
-    /**
-     * 释放资源
-     * @param stmt
-     * @param conn
-     */
-    public static void close(ResultSet rs,Statement stmt, Connection conn){
-        if( rs != null){
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if( stmt != null){
-            try {
-                stmt.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if( conn != null){
-            try {
-                conn.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-}
-
-* 练习：
-    * 需求：
-        1. 通过键盘录入用户名和密码
-        2. 判断用户是否登录成功
-            * select * from user where username = &quot;&quot; and password = &quot;&quot;;
-            * 如果这个sql有查询结果，则成功，反之，则失败
-
-    * 步骤：
-        1. 创建数据库表 user
-            CREATE TABLE USER(
-                id INT PRIMARY KEY AUTO_INCREMENT,
-                username VARCHAR(32),
-                PASSWORD VARCHAR(32)
-
-            );
-
-            INSERT INTO USER VALUES(NULL,&apos;zhangsan&apos;,&apos;123&apos;);
-            INSERT INTO USER VALUES(NULL,&apos;lisi&apos;,&apos;234&apos;);
-
-        2. 代码实现：
-            public class JDBCDemo9 {
-
-                public static void main(String[] args) {
-                    //1.键盘录入，接受用户名和密码
-                    Scanner sc = new Scanner(System.in);
-                    System.out.println(&quot;请输入用户名：&quot;);
-                    String username = sc.nextLine();
-                    System.out.println(&quot;请输入密码：&quot;);
-                    String password = sc.nextLine();
-                    //2.调用方法
-                    boolean flag = new JDBCDemo9().login(username, password);
-                    //3.判断结果，输出不同语句
-                    if(flag){
-                        //登录成功
-                        System.out.println(&quot;登录成功！&quot;);
-                    }else{
-                        System.out.println(&quot;用户名或密码错误！&quot;);
-                    }
-
-
-                }
-
-
-
-                /**
-                 * 登录方法
-                 */
-                public boolean login(String username ,String password){
-                    if(username == null || password == null){
-                        return false;
-                    }
-                    //连接数据库判断是否登录成功
-                    Connection conn = null;
-                    Statement stmt =  null;
-                    ResultSet rs = null;
-                    //1.获取连接
-                    try {
-                        conn =  JDBCUtils.getConnection();
-                        //2.定义sql
-                        String sql = &quot;select * from user where username = &apos;&quot;+username+&quot;&apos; and password = &apos;&quot;+password+&quot;&apos; &quot;;
-                        //3.获取执行sql的对象
-                        stmt = conn.createStatement();
-                        //4.执行查询
-                        rs = stmt.executeQuery(sql);
-                        //5.判断
-                       /* if(rs.next()){//如果有下一行，则返回true
-                            return true;
-                        }else{
-                            return false;
-                        }*/
-                       return rs.next();//如果有下一行，则返回true
-
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }finally {
-                        JDBCUtils.close(rs,stmt,conn);
-                    }
-
-
-                    return false;
-                }
-            }</code></pre><h2 id="JDBC控制事务："><a href="#JDBC控制事务：" class="headerlink" title="JDBC控制事务："></a>JDBC控制事务：</h2><pre><code>1. 事务：一个包含多个步骤的业务操作。如果这个业务操作被事务管理，则这多个步骤要么同时成功，要么同时失败。
-2. 操作：
-    1. 开启事务
-    2. 提交事务
-    3. 回滚事务
-3. 使用Connection对象来管理事务
-    * 开启事务：setAutoCommit(boolean autoCommit) ：调用该方法设置参数为false，即开启事务
-        * 在执行sql之前开启事务
-    * 提交事务：commit() 
-        * 当所有sql都执行完提交事务
-    * 回滚事务：rollback() 
-        * 在catch中回滚事务
-
-4. 代码：
-    public class JDBCDemo10 {
-
-        public static void main(String[] args) {
-            Connection conn = null;
-            PreparedStatement pstmt1 = null;
-            PreparedStatement pstmt2 = null;
-
-            try {
-                //1.获取连接
-                conn = JDBCUtils.getConnection();
-                //开启事务
-                conn.setAutoCommit(false);
-
-                //2.定义sql
-                //2.1 张三 - 500
-                String sql1 = &quot;update account set balance = balance - ? where id = ?&quot;;
-                //2.2 李四 + 500
-                String sql2 = &quot;update account set balance = balance + ? where id = ?&quot;;
-                //3.获取执行sql对象
-                pstmt1 = conn.prepareStatement(sql1);
-                pstmt2 = conn.prepareStatement(sql2);
-                //4. 设置参数
-                pstmt1.setDouble(1,500);
-                pstmt1.setInt(2,1);
-
-                pstmt2.setDouble(1,500);
-                pstmt2.setInt(2,2);
-                //5.执行sql
-                pstmt1.executeUpdate();
-                // 手动制造异常
-                int i = 3/0;
-
-                pstmt2.executeUpdate();
-                //提交事务
-                conn.commit();
-            } catch (Exception e) {
-                //事务回滚
-                try {
-                    if(conn != null) {
-                        conn.rollback();
-                    }
-                } catch (SQLException e1) {
-                    e1.printStackTrace();
-                }
-                e.printStackTrace();
-            }finally {
-                JDBCUtils.close(pstmt1,conn);
-                JDBCUtils.close(pstmt2,null);
-            }
-
-
-        }
-
-    }</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/" data-id="ck3mlnxfp0004s8tf3z68bmye" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89-1/" data-id="ck3mmx9au000ep0tfchwv00xz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -2309,23 +1551,23 @@ hello , response
       <ul>
         
           <li>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/">JavaScript第七章重点总结</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/01/xo-blog-master/">xo/blog (master)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第一章总结</a>
+          </li>
+        
+          <li>
             <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">http常见错误</a>
           </li>
         
           <li>
             <a href="/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/">jsp第六次课</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/">mysql复习内容</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">JQuery基础笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/">jsp第五次课讲义</a>
           </li>
         
       </ul>
