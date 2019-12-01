@@ -61,6 +61,1335 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-http常见错误" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="article-date">
+  <time datetime="2019-12-01T06:03:44.000Z" itemprop="datePublished">2019-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">http常见错误</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我给大家讲的是http报错的20种错误信息代码。<br>我们打开页面发生错误时浏览器显示的错误信息代码。<br>状态代码可以指明具体请求是否已成功，还可以揭示请求失败的确切原因。<br>400 （错误请求） 服务器不理解请求的语法。<br>401 （未授权） 请求要求身份验证。 对于需要登录的网页，服务器可能返回此响应。<br>403 （禁止） 服务器拒绝请求。<br>404 （未找到） 服务器找不到请求的网页。<br>405 （方法禁用） 禁用请求中指定的方法。<br>406 （不接受） 无法使用请求的内容特性响应请求的网页。<br>407 （需要代理授权） 此状态代码与 401（未授权）类似，但指定请求者应当授权使用代理。<br>408 （请求超时） 服务器等候请求时发生超时。<br>409 （冲突） 服务器在完成请求时发生冲突。服务器必须在响应中包含有关冲突的信息。<br>410 （已删除） 如果请求的资源已永久删除，服务器就会返回此响应。<br>411 （需要有效长度） 服务器不接受不含有效内容长度标头字段的请求。<br>412 （未满足前提条件） 服务器未满足请求者在请求中设置的其中一个前提条件。<br>413 （请求实体过大） 服务器无法处理请求，因为请求实体过大，超出服务器的处理能力。<br>414 （请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法处理。<br>415 （不支持的媒体类型） 请求的格式不受请求页面的支持。<br>416 （请求范围不符合要求） 如果页面无法提供请求的范围，则服务器会返回此状态代码。<br>417 （未满足期望值） 服务器未满足”期望”请求标头字段的要求。</p>
+<p>500 （服务器内部错误） 服务器遇到错误，无法完成请求。<br>501 （尚未实施） 服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码。<br>502 （错误网关） 服务器作为网关或代理，从上游服务器收到无效响应。<br>503 （服务不可用） 服务器目前无法使用（由于超载或停机维护）。通常，这只是暂时状态。<br>504 （网关超时） 服务器作为网关或代理，但是没有及时从上游服务器收到请求。<br>505 （HTTP 版本不受支持） 服务器不支持请求中所用的 HTTP 协议版本。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="ck3mnr81a000ad8tf622b3yxp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jsp第六次课" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/" class="article-date">
+  <time datetime="2019-11-21T03:20:08.000Z" itemprop="datePublished">2019-11-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/">jsp第六次课</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>动态网站开发第五次课讲义<br>一、学习目标<br>1、数据库连接池<br>2、JdbcTemplate<br>3、分页显示数据<br>4、Filter<br>5、ajax与json<br>6、文件上传<br>二、具体讲解<br>2.1、数据库连接池<br>2.1.1、简介<br>数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏。这项技术能明显提高对数据库操作的性能。<br>2.1.2、常用数据库连接池</p>
+<p>我们采用Druid数据库连接池，其它连接池可以课下了解。以下进行Druid连接池的介绍<br>2.1.3、Druid数据库连接池简介<br>Druid是阿里众多优秀开源项目中的一个。它除了提供性能卓越的连接池功能外，还集成了SQL监控，黑名单拦截等功能，用它自己的话说，Druid是“为监控而生”。<br>2.1.4、Druid数据库连接池的优点<br>1、是目前java最优秀的数据库连接池，用户量较大，中文文档比较完备<br>2、强大的监控特性，通过Druid提供的监控功能，可以清楚知道连接池和SQL的工作<br>情况。<br>a. 监控SQL的执行时间、ResultSet持有时间、返回行数、更新行数、错误次数、错<br>误堆栈信息；<br>b. SQL执行的耗时区间分布。什么是耗时区间分布呢？比如说，某个SQL执行了1000次，其中0<del>1毫秒区间50次，1</del>10毫秒800次，10<del>100毫秒100次，100</del>1000毫秒30次，1~10秒15次，10秒以上5次。通过耗时区间分布，能够非常清楚知道SQL的执行耗时情况；<br>c. 监控连接池的物理连接创建和销毁次数、逻辑连接的申请和关闭次数、非空等待次数、PSCache命中率等。<br>3、方便扩展。Druid提供了Filter-Chain模式的扩展API，可以自己编写Filter拦截JDBC中<br>的  任何方法，可以在上面做任何事情，比如说性能监控、SQL审计、用户名密码加密、日志等等。<br>4、Druid集合了开源和商业数据库连接池的优秀特性，并结合阿里巴巴大规模苛刻生产环境的使用经验进行优化。<br>2.1.5、Druid数据库连接池的基本使用方法<br>1、步骤：<br>    1. 导入jar包 druid-1.0.9.jar<br>    2. 定义配置文件：<br>        是properties形式的<br>        可以叫任意名称，可以放在任意目录下<br>    3. 加载配置文件。Properties<br>    4. 获取数据库连接池对象：通过工厂来来获取  DruidDataSourceFactory<br>    5. 获取连接：getConnection<br>       代码：<br>         //3.加载配置文件<br>         Properties pro = new Properties();<br>InputStream is = DruidDemo.class.getClassLoader().getResourceAsStream(“druid.properties”);<br>         pro.load(is);<br>         //4.获取连接池对象<br>         DataSource ds = DruidDataSourceFactory.createDataSource(pro);<br>         //5.获取连接<br>         Connection conn = ds.getConnection();<br>2、定义工具类：<br>     1. 定义一个类 JDBCUtils<br>     2. 提供静态代码块加载配置文件，初始化连接池对象<br>     3. 提供方法<br>        1. 获取连接方法：通过数据库连接池获取连接<br>        2. 释放资源<br>        3. 获取连接池的方法<br>2.2、JdbcTemplate<br>2.2.1、概述<br>Spring框架对JDBC的简单封装。提供了一个JDBCTemplate对象简化JDBC的开发<br>2.2.2、JdbcTemplate基本使用<br>步骤：<br>    1. 导入jar包<br>    2. 创建JdbcTemplate对象。依赖于数据源DataSource<br>       JdbcTemplate template = new JdbcTemplate(ds);<br>    3. 调用JdbcTemplate的方法来完成CRUD的操作<br>       update():执行DML语句。增、删、改语句<br>       queryForMap():查询结果将结果集封装为map集合，将列名作为key，将值作为<br>value 将这条记录封装为一个map集合。注意：这个方法查询的结果集长度<br>只能是1<br>       queryForList():查询结果将结果集封装为list集合<br>            注意：将每一条记录封装为一个Map集合，再将Map集合装载到List集合中<br>        query():查询结果，将结果封装为JavaBean对象<br>            query的参数：RowMapper<br>                 1、一般我们使用BeanPropertyRowMapper实现类。可以完成数据<br>到JavaBean的自动封装<br>                 2、new BeanPropertyRowMapper&lt;类型&gt;(类型.class)<br>        queryForObject：查询结果，将结果封装为对象<br>               一般用于聚合函数的查询<br>2.3、分页显示数据<br>大部分情况下，表中有大量数据，不太可能一次性的一张表的数据显示在一个网页上，一般进行分页显示，比如：大家经常访问的淘宝网就是一页一页的进行显示的<br>1、创建分页bean类，Page</p>
+<p>2、把dao包中的查询语句加上limit</p>
+<p>3、在service层获得数据进行按页获取</p>
+<p>3、创建分页的jsp页面</p>
+<p>2.4、Filter过滤器<br>2.4.1、概念：<br>    生活中的过滤器：净水器,空气净化器，土匪、<br>    web中的过滤器：当访问服务器的资源时，过滤器可以将请求拦截下来，完成一些特<br>殊的功能。<br>    过滤器的作用：<br>            一般用于完成通用的操作。如：登录验证、统一编码处理、敏感字符过滤…<br>2.4.2、快速入门：<br>    1. 步骤：<br>        1. 定义一个类，实现接口Filter<br>        2. 复写方法<br>        3. 配置拦截路径<br>            1. web.xml<br>            2. 注解<br>     2. 代码：<br>            @WebFilter(“/*”)//访问所有资源之前，都会执行该过滤器<br>            public class FilterDemo1 implements Filter {<br>                @Override<br>                public void init(FilterConfig filterConfig) throws ServletException {<br>                }<br>                @Override<br>                public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {<br>                    System.out.println(“filterDemo1被执行了….”);</p>
+<pre><code>                //放行
+                filterChain.doFilter(servletRequest,servletResponse);
+            }
+            @Override
+            public void destroy() {
+            }
+        }
+3. 过滤器细节：
+    1. web.xml配置    
+        &lt;filter&gt;
+            &lt;filter-name&gt;demo1&lt;/filter-name&gt;
+            &lt;filter-class&gt;cn.itcast.web.filter.FilterDemo1&lt;/filter-class&gt;
+        &lt;/filter&gt;
+        &lt;filter-mapping&gt;
+            &lt;filter-name&gt;demo1&lt;/filter-name&gt;
+            &lt;!-- 拦截路径 --&gt;
+            &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+        &lt;/filter-mapping&gt;
+    2. 过滤器执行流程
+        1. 执行过滤器
+        2. 执行放行后的资源
+        3. 回来执行过滤器放行代码下边的代码
+    3. 过滤器生命周期方法
+        1. init:在服务器启动后，会创建Filter对象，然后调用init方法。只执行一次</code></pre><p>。用于加载资源<br>            2. doFilter:每一次请求被拦截资源时，会执行。执行多次<br>            3. destroy:在服务器关闭后，Filter对象被销毁。如果服务器是正常关闭，则<br>会执行destroy方法。只执行一次。用于释放资源<br>        4. 过滤器配置详解<br>            拦截路径配置：</p>
+<ol>
+<li><p>具体资源路径： /index.jsp   只有访问index.jsp资源时，过滤器才<br>会被执行</p>
+<pre><code>2. 拦截目录： /user/*    访问/user下的所有资源时，过滤器都会被执行
+3. 后缀名拦截： *.jsp        访问所有后缀名为jsp资源时，过滤器都会</code></pre><p>被执行</p>
+<pre><code>        4. 拦截所有资源：/*        访问所有资源时，过滤器都会被执行
+    拦截方式配置：资源被访问的方式
+        注解配置：
+            设置dispatcherTypes属性
+                1. REQUEST：默认值。浏览器直接请求资源
+                2. FORWARD：转发访问资源
+                3. INCLUDE：包含访问资源
+                4. ERROR：错误跳转资源
+                5. ASYNC：异步访问资源
+        web.xml配置
+             设置&lt;dispatcher&gt;&lt;/dispatcher&gt;标签即可        
+5. 过滤器链(配置多个过滤器)
+    执行顺序：如果有两个过滤器：过滤器1和过滤器2
+        1. 过滤器1
+        2. 过滤器2
+        3. 资源执行
+        4. 过滤器2
+        5. 过滤器1 </code></pre><p>过滤器先后顺序问题：</p>
+<pre><code>1. 注解配置：按照类名的字符串比较规则比较，值小的先执行
+    如： AFilter 和 BFilter，AFilter就先执行了。
+2. web.xml配置： &lt;filter-mapping&gt;谁定义在上边，谁先执行</code></pre></li>
+<li><p>案例：</p>
+<pre><code>1. 案例1_登录验证
+    需求：
+        1. 访问day17_case案例的资源。验证其是否登录
+        2. 如果登录了，则直接放行。
+        3. 如果没有登录，则跳转到登录页面，提示&quot;您尚未登录，请先登录&quot;。
+2. 案例2_敏感词汇过滤
+    需求：
+        1. 对day17_case案例录入的数据进行敏感词汇过滤
+        2. 敏感词汇参考《敏感词汇.txt》
+        3. 如果是敏感词汇，替换为 *** 
+    分析：
+        1. 对request对象进行增强。增强获取参数相关方法
+        2. 放行。传递代理对象
+    增强对象的功能：
+        设计模式：一些通用的解决固定问题的方式
+        1. 装饰模式
+        2. 代理模式
+            概念：
+                1. 真实对象：被代理的对象
+                2. 代理对象：
+                3. 代理模式：代理对象代理真实对象，达到增强真实对象功</code></pre><p>能的目的</p>
+<pre><code>实现方式：
+   1. 静态代理：有一个类文件描述代理模式
+   2. 动态代理：在内存中形成代理类
+      实现步骤：
+          1. 代理对象和真实对象实现相同的接口
+          2. 代理对象 = Proxy.newProxyInstance();
+          3. 使用代理对象调用方法。
+          4. 增强方法
+
+       增强方式：
+          1. 增强参数列表
+          2. 增强返回值类型
+          3. 增强方法体执行逻辑</code></pre></li>
+<li><p>5、ajax与json<br>2.5.1、ajax概念：<br>ASynchronous JavaScript And XML    异步的JavaScript 和 XML<br>要想理解ajax应该先了解异步与同步的概念</p>
+<ol>
+<li>异步和同步：客户端和服务器端相互通信的基础上<pre><code>客户端必须等待服务器端的响应。在等待的期间客户端不能做其他操作。
+客户端不需要等待服务器端的响应。在服务器处理请求的过程中，客户端可</code></pre>以进行其他的操作。<br>Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。通过在后台与服务器进行少量数据交换，Ajax 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。<br>传统的网页（不使用 Ajax）如果需要更新内容，必须重载整个网页页面。提升用户的体验</li>
+</ol>
+</li>
+<li><p>5.2、实现方式：</p>
+</li>
+<li><p>原生的JS实现方式（了解）<br>   1.创建核心对象</p>
+<pre><code>var xmlhttp;
+if (window.XMLHttpRequest){</code></pre><p>// code for IE7+, Firefox, Chrome, Opera, Safari</p>
+<pre><code>          xmlhttp=new XMLHttpRequest();
+}else{</code></pre><p>// code for IE6, IE5</p>
+<pre><code>             xmlhttp=new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);
+   }
+2. 建立连接
+ /*
+   参数：
+      1. 请求方式：GET、POST
+          get方式，请求参数在URL后边拼接。send方法为空参
+          post方式，请求参数在send方法中定义
+      2. 请求的URL：
+      3. 同步或异步请求：true（异步）或 false（同步）
+  */
+   xmlhttp.open(&quot;GET&quot;,&quot;ajaxServlet?username=tom&quot;,true);</code></pre><p>   3.发送请求</p>
+<pre><code>xmlhttp.send();</code></pre><p>   4.接受并处理来自服务器的响应结果</p>
+<pre><code>获取方式 ：xmlhttp.responseText
+什么时候获取？当服务器响应成功后再获取
+当xmlhttp对象的就绪状态改变时，触发事件onreadystatechange。
+ xmlhttp.onreadystatechange=function(){
+     //判断readyState就绪状态是否为4，判断status响应状态码是否为200
+     if (xmlhttp.readyState==4 &amp;&amp; xmlhttp.status==200){
+                 //获取服务器的响应结果
+                  var responseText = xmlhttp.responseText;
+                  alert(responseText);
+      }
+ }</code></pre><p>2、jquery方式实现</p>
+</li>
+<li><p>$.ajax()</p>
+<pre><code>语法：$.ajax({键值对});
+使用$.ajax()发送异步请求
+$.ajax({
+   url:&quot;ajaxServlet1111&quot; , // 请求路径
+   type:&quot;POST&quot; , //请求方式
+   data: &quot;username=jack&amp;age=23&quot;,//请求参数
+   data:{&quot;username&quot;:&quot;jack&quot;,&quot;age&quot;:23},
+       success:function (data) {
+             alert(data);
+        },//响应成功后的回调函数
+        error:function () {
+              alert(&quot;出错啦...&quot;)
+        },//表示如果请求响应出现错误，会执行的回调函数
+        dataType:&quot;text&quot;//设置接受到的响应数据的格式
+    });</code></pre><ol start="2">
+<li>$.get()：发送get请求<br>语法：$.get(url, [data], [callback], [type])<pre><code>参数：
+     url：请求路径
+     data：请求参数
+     callback：回调函数
+     type：响应结果的类型</code></pre></li>
+<li>$.post()：发送post请求<br>语法：$.post(url, [data], [callback], [type])<br>   参数：<pre><code>url：请求路径
+data：请求参数
+callback：回调函数
+type：响应结果的类型</code></pre></li>
+</ol>
+</li>
+<li><p>5.3、json讲解</p>
+</li>
+<li><p>概念： JavaScript Object Notation        JavaScript对象表示法</p>
+<pre><code>Person p = new Person();
+p.setName(&quot;张三&quot;);
+p.setAge(23);
+p.setGender(&quot;男&quot;);
+var p = {&quot;name&quot;:&quot;张三&quot;,&quot;age&quot;:23,&quot;gender&quot;:&quot;男&quot;};</code></pre><p>json现在多用于存储和交换文本信息的语法</p>
+<pre><code>进行数据的传输
+JSON 比 XML 更小、更快，更易解析。</code></pre></li>
+<li><p>语法：</p>
+<ol>
+<li>基本规则<br>数据在名称/值对中：json数据是由键值对构成的<br>   键用引号(单双都行)引起来，也可以不使用引号<br>   值得取值类型：<pre><code>        1. 数字（整数或浮点数）
+        2. 字符串（在双引号中）
+        3. 逻辑值（true 或 false）
+        4. 数组（在方括号中）    {&quot;persons&quot;:[{},{}]}
+        5. 对象（在花括号中） {&quot;address&quot;:{&quot;province&quot;：&quot;陕西&quot;....}}
+        6. null
+数据由逗号分隔：多个键值对由逗号分隔
+花括号保存对象：使用{}定义json 格式
+方括号保存数组：[]</code></pre><ol start="2">
+<li>获取数据:<ol>
+<li>json对象.键名</li>
+<li>json对象[“键名”]</li>
+<li>数组对象[索引]</li>
+<li>遍历<br>//1.定义基本格式<br>var person = {“name”: “张三”, age: 23, ‘gender’: true};<br>var ps = [{“name”: “张三”, “age”: 23, “gender”: true},<pre><code>{&quot;name&quot;: &quot;李四&quot;, &quot;age&quot;: 24, &quot;gender&quot;: true},
+{&quot;name&quot;: &quot;王五&quot;, &quot;age&quot;: 25, &quot;gender&quot;: false}];</code></pre>//获取person对象中所有的键和值<br>//for in 循环<br>for(var key in person){<pre><code>这样的方式获取不行。因为相当于  person.&quot;name&quot;
+alert(key + &quot;:&quot; + person.key);
+alert(key+&quot;:&quot;+person[key]);</code></pre>}<br>//获取ps中的所有值<br>for (var i = 0; i &lt; ps.length; i++) {<pre><code>var p = ps[i];
+for(var key in p){
+         alert(key+&quot;:&quot;+p[key]);
+}</code></pre>}</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>JSON数据和Java对象的相互转换<br>JSON解析器：<br>  常见的解析器：Jsonlib，Gson，fastjson，jackson<ol>
+<li>JSON转为Java对象<ol>
+<li>导入jackson的相关jar包</li>
+<li>创建Jackson核心对象 ObjectMapper</li>
+<li>调用ObjectMapper的相关方法进行转换<ol>
+<li>readValue(json字符串数据,Class)</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Java对象转换JSON</p>
+<pre><code>1. 使用步骤：
+    1. 导入jackson的相关jar包
+    2. 创建Jackson核心对象 ObjectMapper
+    3. 调用ObjectMapper的相关方法进行转换
+      1. 转换方法：
+         writeValue(参数1，obj):
+           参数1：
+             File：将obj对象转换为JSON字符串，并保存到指定的文件中
+             Writer：将obj对象转换为JSON字符串，并将json数据填充</code></pre><p>到字符输出流中</p>
+<pre><code>OutputStream：将obj对象转换为JSON字符串，并将json数</code></pre><p>据填充到字节输出流中</p>
+<pre><code>     writeValueAsString(obj):将对象转为json字符串
+
+2. 注解：
+    1. @JsonIgnore：排除属性。
+    2. @JsonFormat：属性值得格式化
+       @JsonFormat(pattern = &quot;yyyy-MM-dd&quot;)</code></pre></li>
+<li><p>复杂java对象转换</p>
+<pre><code>1. List：数组
+2. Map：对象格式一致</code></pre></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/" data-id="ck3mnr81i000gd8tf4loxayvh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mysql复习内容" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/" class="article-date">
+  <time datetime="2019-11-18T01:19:33.000Z" itemprop="datePublished">2019-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/">mysql复习内容</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1．以下聚合函数求数据总和的是(  B    )</p>
+<p>A．MAX</p>
+<p>B．SUM</p>
+<p>C．COUNT</p>
+<p>D．AVG</p>
+<p>2．可以用(D      )来声明游标</p>
+<p>A．CREATE CURSOR</p>
+<p>B．ALTER CURSOR</p>
+<p>C．SET CURSOR</p>
+<p>D．DECLARE CURSOR</p>
+<p>3．SELECT语句的完整语法较复杂，但至少包括的部分是(  B    )</p>
+<p>A．仅SELECT</p>
+<p>B．SELECT，FROM</p>
+<p>C．SELECT，GROUP</p>
+<p>D．SELECT，INTO</p>
+<p>4．SQL语句中的条件用以下哪一项来表达(  C    )</p>
+<p>A．THEN</p>
+<p>B．WHILE</p>
+<p>C．WHERE</p>
+<p>D．IF</p>
+<p>5．使用CREATE TABLE语句的(   A   )子句，在创建基本表时可以启用全文本搜索</p>
+<p>A．FULLTEXT</p>
+<p>B．ENGINE</p>
+<p>C．FROM</p>
+<p>D．WHRER</p>
+<p>6．以下能够删除一列的是(  B    )</p>
+<p>A．alter table emp remove addcolumn</p>
+<p>B．alter table emp drop column addcolumn</p>
+<p>C．alter table emp delete column addcolumn</p>
+<p>D．alter table emp delete addcolumn</p>
+<p>7．若要撤销数据库中已经存在的表S，可用（ D）。</p>
+<p>A．DELETE TABLE S</p>
+<p>B．DELETE S</p>
+<p>C．DROP S</p>
+<p>D．DROP TABLE S</p>
+<p>8．查找表结构用以下哪一项(  D    )</p>
+<p>A．FIND</p>
+<p>B．SELETE</p>
+<p>C．ALTER</p>
+<p>D．DESC</p>
+<p>9．要得到最后一句SELECT查询到的总行数，可以使用的函数是(  A    )</p>
+<p>A．FOUND_ROWS</p>
+<p>B．LAST_ROWS</p>
+<p>C．ROW_COUNT</p>
+<p>D．LAST_INSERT_ID</p>
+<p>10．在视图上不能完成的操作是( D     )</p>
+<p>A．查询</p>
+<p>B．在视图上定义新的视图</p>
+<p>C．更新视图</p>
+<p>D．在视图上定义新的表</p>
+<p>11对于删除操作以下说法正确的是（ABCD）<br>A．drop database 数据库名：删除数据库<br>B．delete from 表名；删除表中所有记录条<br>C．delete from 表名 where 字段名=值；删除符合条件的记录条<br>D．drop table 表名；删除表</p>
+<p>12.下面正确的说法是( ABD  )<br>A．关键字只能由单个的属性组成<br>B．在一个关系中，关键字的值不能为空<br>C．一个关系中的所有候选关键字均可以被指定为主关键字<br>D．关键字是关系中能够用来惟一标识元组的属性 </p>
+<p>13.以下说法正确的是(   ABD   )<br>A．字符型既可用单引号也可用双引号将串值括起来<br>B．字符型的87398143不参与计算的<br>C．87398143 不能声明为数值型<br>D．数值型的87398143将参与计算 </p>
+<p>14.关于主键下列说法正确的是（ABCD）<br>A．可以是表中的一个字段，<br>B．是确定数据库中的表的记录的唯一标识字段，<br>C．该字段不可为空也不可以重复<br>D．可以是表中的多个字段组成的。<br>15.mySQL支持哪些逻辑运算符(CD)<br>A．&amp;&amp;<br>B．||<br>C．NOT<br>D．AND<br>16.以下不属于浮点型的是（ABD）<br>A．smallint<br>B．mediumint<br>C．float<br>D．int </p>
+<p>17.下列正确的命令是(  ACD    )<br>A．show tables;<br>B．show columns;<br>C．show columns from customers;<br>D．show databases; </p>
+<p>18.正则表达式中，重复元字符“*”可以表示(   CD   )<br>A．无匹配<br>B．只匹配1个<br>C．0个匹配<br>D．多个匹配 </p>
+<p>19.下面对 union 的描述正确的是(  ACD    )<br>A．union 只连接结果集完全一样的查询语句<br>B．union 可以连接结果集中数据类型个数相同的多个结果集<br>C．union 是筛选关键词，对结果集再进行操作<br>D．任何查询语句都可以用 union 来连接 </p>
+<p>20.下列哪一个逻辑运算符的优先级排列不正确(  ACD    )<br>A．AND/NOT/OR<br>B．NOT/AND/OR<br>C．OR/NOT /AND<br>D．OR/AND/NOT<br>21.对某个数据库进行筛选后 , (  AC     )。<br>A．可以选出符合某些条件组合的记录<br>B．不能选择出符合条件组合的记录<br>C．可以选出符合某些条件的记录<br>D．只能选择出符合某一条件的记录<br>22.下列语句错误的是(   BD   )<br>A．select * from orders where ordername is not null;<br>B．select * from orders where ordername&lt;&gt;null;<br>C．select * from orders where ordername is null;<br>D．select * from orders where ordername not  is null; </p>
+<p>23.在下列关于关系的叙述中，正确的是(  ABC )<br>A．行在表中的顺序无关紧要<br>B．表中任意两行的值不能相同<br>C．列在表中的顺序无关紧要<br>D．表中任意两列的值不能相同 </p>
+<p>24.下面系统中属于关系数据库管理系统的是(  ABC )<br>A．MS_SQL SERVER<br>B．Oracle<br>C．MySql<br>D．DB2<br>25.下列是MYSQL比较运算符的是(   ABD   )<br>A．!=<br>B．&lt;&gt;<br>C．==<br>D．&gt;= </p>
+<p>26.下列说法正确的是(   AB   )<br>A．在MySQL中，不允许有空表存在，即一张数据表中不允许没有字段。<br>B．在MySQL中，对于存放在服务器上的数据库，用户可以通过任何客户端进行访问。<br>C．数据表的结构中包含字段名、类型、长度、记录。<br>D．字符型数据其常量标志是单引号和双引号，且两种符号可以混用。 </p>
+<p>27.下面关于使用UPDATE语句，正确的是(  ABCD    )<br>A．被定义为NOT NULL的列不可以被更新为NULL<br>B．不能在一个子查询中更新一个表，同时从同一个表中选择<br>C．不能把ORDER BY或LIMIT与多表语法的UPDATE语句同时使用<br>D．如果把一列设置为其当前含有的值，则该列不会更新 </p>
+<p>28.关于DELETE和TRUNCATE TABLE的说法，正确的是(  BD    )<br>A．两者都可以删除指定条目的记录<br>B．前者可以删除指定条目的记录，后者不能<br>C．两者都反回被删除记录的数目<br>D．前者返回被删除记录数目，后者不返回 </p>
+<p>29.下面数据库名称合法的是(  CD    )<br>A．db1/student<br>B．db1.student<br>C．db1_student<br>D．db1&amp;student </p>
+<p>30.下面语句中，表示过虑条件是vend_id=1002或vend_id=1003的是(  AB    )<br>A．select * from products where vend_id=1002 or vend_id=1003<br>B．select * from products where vend_id in (1002,1003);<br>C．select * from products where vend_id not in (1004,1005);<br>D．select * from products where vend_id=1002 and vend_id=1003 </p>
+<p>31.以下否定语句搭配正确的是（ACD）<br>A．not in<br>B．in not<br>C．not between  and<br>D．is not null </p>
+<p>32.以下说法正确的是(  BD    )<br>A．一个服务器只能有一个数据库<br>B．一个服务器可以有多个数据库<br>C．一个数据库只能建立一张数据表<br>D．一个数据库可以建立多张数据表 </p>
+<p>33.以下哪些是mySQL数据类型（ABCD）<br>A．BIGINT<br>B．TINYINT<br>C．INTEGER<br>D．INT </p>
+<p>34.关于group by 以下语句正确的是(  BCD    )<br>A．SELECT store_name  FROM Store_Information GROUP BY store_name<br>B． SELECT  SUM(sales) FROM Store_Information GROUP BY  sales<br>C．SELECT store_name, price SUM(sales) FROM Store_Information GROUP BY store_name，price<br>D．SELECT store_name, SUM(sales) FROM Store_Information GROUP BY store_name </p>
+<p>35.在数据库系统中，有哪几种数据模型？(  BCD     )<br>A．实体联系模型<br>B．关系模型<br>C． 网状模型<br>D． 层次模型 </p>
+<p>36.以下聚合函数求数据总和以及求行数的是(  BC    )<br>A．MAX<br>B．SUM<br>C．COUNT<br>D．AVG<br>37．UNIQUE惟一索引的作用是(  A    )</p>
+<p>A．保证各行在该索引上的值都不得重复</p>
+<p>B．保证各行在该索引上的值不得为NULL</p>
+<p>C．保证参加惟一索引的各列，不得再参加其他的索引</p>
+<p>D．保证惟一索引不能被删除</p>
+<p>38．用于将事务处理写到数据库的命令是(  C    )</p>
+<p>A．insert</p>
+<p>B．rollback</p>
+<p>C．commit</p>
+<p>D．savepoint</p>
+<p>39．查找条件为：姓名不是NULL的记录(  C    )</p>
+<p>A．WHERE NAME ! NULL</p>
+<p>B．WHERE NAME NOT NULL</p>
+<p>C．WHERE NAME IS NOT NULL</p>
+<p>D．WHERE NAME!=NULL<br>40．主键的建立有(  D    )种方法<br>A．一<br>B．四<br>C．二<br>D．三<br>41．在视图上不能完成的操作是(  B    )<br>A．更新视图数据<br>B．在视图上定义新的基本表<br>C．在视图上定义新的视图<br>D．查询<br>42，SQL语句中的条件用以下哪些项来表达(   AC   )<br>A．HAVING<br>B．WHILE<br>C．WHERE<br>D．IF</p>
+<p>43.以下对约束描述正确的是(   ABCD   )<br>A．主键约束可以保证列不重复以及不允许为null<br>B．唯一约束保证列的数据不重复，但可以为null<br>C．非空约束保证列的数据没有NULL值<br>D．默认值约束为如果此列不插入数据可设置一个默认值</p>
+<p>44.以下语句正确的是(   AC   )<br>A．select  sal  from emp;<br>B．select sal<em>10,sal</em>deptno from emp;<br>C．不能使用运算符号<br>D．select sal<em>10,deptno</em>10 from emp;</p>
+<p>45.以下哪些属于连接种类( ABD   )<br>A．左外连接<br>B．内连接<br>C．中间连接<br>D．交叉连接</p>
+<p>46.删除数据表中数据可以用以下哪几项(  CD    )<br>A．DROP<br>B．UPDATE<br>C．DELETE<br>D．TRUNCATE</p>
+<p>47.用来插入数据的命令是(  A    )，用于更新的命令是(   B   )<br>A．INSERT<br>B．UPDATE<br>C．DELETE<br>D．DROP</p>
+<p>48.下列可以查询出张三与李四信息的语句为( AC   )<br>A．Select * from tablename where name=’张三’ or name=’李四’<br>B．Select * from tablename where name=’张三’ and name=’李四’<br>C．Select * from tablename where name in(‘张三’,’李四’)<br>D．Select * from tablename where name not in(‘张三’,’李四’)</p>
+<p>49.以下可以配合Order by进行降序或升序排序的是(    AC  )<br>A．ASC<br>B．ESC<br>C．DESC<br>D．DSC</p>
+<p>50.在MySQL中，建立数据以及建立表分别用(   AD   )<br>A．CREATE TABLE命令<br>B．CREATE TRIGGER命令<br>C．CREATE INDEX命令<br>D．CREATE DATABASE命令</p>
+<p>51.以下插入记录正确的(  BD    )<br>A．insert into emp(ename,hiredate,sal) values (value1,value2,value3);<br>B．insert into emp (ename,sal) values(value1,value2);<br>C．insert into emp (ename) values(value1,value2,value3);<br>D．insert into emp (ename,hiredate) values(value1,value2),(value1,value2),(value1,value2);</p>
+<p>52.以下哪些项用来排序( BD     )<br>A．ORDERED BY<br>B．ORDER BY ESC<br>C．GROUP BY<br>D．ORDER BY DESC</p>
+<p>53.在查询语句中，可能出现的关键词为(   ABCD   )<br>A．select<br>B．group by<br>C．where<br>D．from</p>
+<p>54.以下语句正确的是(  ABD    )<br>A．select * from emp;<br>B．select ename,hiredate,sal from emp;<br>C．select *  from emp order deptno;<br>D．select * from where deptno=1 and sal&lt;300;</p>
+<p>55.例如数据库中有A表，包括学生，学科，成绩 ，序号四个字段 , 数据库结构为<br>学生     学科     成绩  序号<br>张三     语文     60    1<br>张三     数学     100   2<br>李四     语文     70    3<br>李四     数学     80    4<br>李四     英语     80    5<br>以下可以查询出所有成绩大于60分的学生的语句为(   AB  )<br>A．Select * from tablename group by ‘学生’ having min(‘成绩’)&gt;60<br>B．Select * from tablename where ‘学生’ not in (select ‘学生’ from tablename where ‘成绩’&lt;60)<br>C．Select * from tablename group by ‘学生’ having min(‘成绩’)&lt;60<br>D．Select * from tablename where ‘学生’  in (select ‘学生’ from tablename where ‘成绩’&lt;60) </p>
+<p>56.一张表的主键个数为(    CD  )<br>A．至多3个<br>B．没有限制<br>C．一般为1个<br>D．可以有一个组合主键<br>57．在SQL语言中，子查询是（D ） 。</p>
+<p>A．选取单表中字段子集的查询语句</p>
+<p>B． 选取多表中字段子集的查询语句</p>
+<p>C．返回单表中数据子集的查询语言</p>
+<p>D．嵌入到另一个查询语句之中的查询语句</p>
+<p>58．向数据表中插入一条记录用以下哪一项(   B   )</p>
+<p>A．CREATE</p>
+<p>B．INSERT</p>
+<p>C．SAVE</p>
+<p>D．UPDATE</p>
+<p>59．在select语句的where子句中，使用正则表达式过滤数据的关键字是( D     )</p>
+<p>A．like</p>
+<p>B．against</p>
+<p>C．match</p>
+<p>D．regexp</p>
+<p>60． 以下哪种操作能够实现实体完整性(  B    )</p>
+<p>A．设置唯一键</p>
+<p>B．设置外键</p>
+<p>C．减少数据冗余</p>
+<p>D．设置主键</p>
+<p>61．SQL语言中，删除一个视图的命令是(  D    )</p>
+<p>A．REMOVE</p>
+<p>B．CLEAR</p>
+<p>C．DELETE</p>
+<p>D．DROP</p>
+<p>62．修改数据库表结构用以下哪一项(   D   )</p>
+<p>A．UPDATE</p>
+<p>B．CREATE</p>
+<p>C．UPDATED</p>
+<p>D．ALTER<br>63.在Mysql中，匹配任意一个字符以及只匹配一个字符的符号是(AD      )<br>A．%<br>B．*<br>C．?<br>D．-</p>
+<p>64.以下哪项不属于DML操作(   ABC   )<br>A．insert<br>B．update<br>C．delete<br>D．create<br>答案：<br>65.以下哪项不属于DDL操作(   ACD   )<br>A．update<br>B．create<br>C． insert<br>D．delete</p>
+<p>66.有关系S（S＃，SNAME，SAGE），C（C＃，CNAME），SC（S＃，C＃，GRADE）。其中S＃是学生号，SNAME是学生姓名，SAGE是学生年龄， C＃是课程号，CNAME是课程名称。要查询选修“ACCESS”<br>课的年龄不小于20的全体学生姓名的SQL语句以下不正确的是（ BCD）。<br>A．Select SNAME from S WHERE S,C,SC where S.S#=SC.S# AND C.C#=SC.C#<br>                           and SAGE in&gt;=20 and CNAME in ‘ACCESS’<br>B．Select SNAME from S WHERE S,C,SC where S.S# = SC.S# and C.C# = SC.C#<br>and SAGE in&gt;20 and CNAME in ‘ACCESS’<br>C．Select SNAME from S WHERE S,C,SC where SAGE in&gt;=20 and CNAME in ‘ACCESS’<br>D．Select SNAME from S WHERE S,C,SC where  S.S# = SC.S# and C.C# = SC.C#<br>and SAGE&gt;=20 and CNAME=‘ACCESS’</p>
+<p>67.例如数据库中有A表，包括学生，学科，成绩三个字段 , 数据库结构为<br>学生     学科     成绩<br>张三     语文     80<br>张三     数学     100<br>李四     语文     70<br>李四     数学     80<br>李四     英语     80<br>如何统计每个学科的最高分，不正确的为(   ACD   )<br>A．select 学生,max(成绩) from A group by 学生;<br>B．select 学生,max(成绩) from A group by学科;<br>C．select 学生,max(成绩) from A order by学生;<br>D．select 学生,max(成绩) from A group by 成绩;</p>
+<p>68.以下列哪些语句对主键的说明不正确的是(    ABD  )<br>A．主键可重复<br>B．主键不唯一<br>C．在数据表中的唯一索引<br>D．主键用foreign key修饰</p>
+<p>69.关于数据库服务器、数据库和表的关系，不正确的说法是(  ACD    )<br>A．一个数据库服务器只能管理一个数据库，一个数据库只能包含一个表<br>B．一个数据库服务器可以管理多个数据库，一个数据库可以包含多个表<br>C．一个数据库服务器只能管理一个数据库，一个数据库可以包含多个表<br>D．一个数据库服务器可以管理多个数据库，一个数据库只能包含一个表</p>
+<p>70.以下关于统计每个部门中人数的的写法不正确的是(  ABC    )<br>A．SELECT SUM(ID) FROM EMP GROUP BY DEPTNO;<br>B．SELECT SUM(ID) FROM EMP ORDER BY DEPTNO;<br>C．SELECT COUNT(ID) FROM EMP ORDER BY DEPTNO;<br>D．SELECT COUNT(ID) FROM EMP GROUP BY DEPTNO;</p>
+<p>71.例如数据库中有A表，包括学生，学科，成绩三个字段 , 数据库结构为<br>学生     学科     成绩<br>张三     语文     80<br>张三     数学     100<br>李四     语文     70<br>李四     数学     80<br>李四     英语     80<br>以下关于统计每个学科的最高分的语句错误的是(  ACD    )<br>A．select 学生,max(成绩) from A group by 学生;<br>B．select 学生,max(成绩) from A group by学科;<br>C．select 学生,max(成绩) from A order by学生;<br>D．select 学生,max(成绩) from A group by 成绩;</p>
+<p>72.以下是聚合函数的是（AD）<br>A．MAX<br>B．LIKE<br>C．DESC<br>D．AVG</p>
+<p>73.对于删除操作以下说法正确的是（ABCD）<br>    A．drop database 数据库名： 删除数据库<br>    B．delete from 表名：删除表中所有记录条<br>    C．delete from 表名 where 字段名=值：删除符合条件的记录条<br>    D．drop table 表名；删除表</p>
+<p>74.下列哪些数据是字符型数据。(   BCD   )<br>    A．中国<br>    B．“1+2”<br>    C．”can’t”<br>    D．”张三－李四”</p>
+<p>75.关于检索结果排序，正确的是（AC）<br>    A．关键字DESC表示降序，ASC表示升序<br>    B．如果指定多列排序，只能在最后一列使用升序或降序关键字<br>    C．如果指定多列排序，可以在任意列使用升序或降序关键字<br>    D．关键字ASC表示降序，DESC表示升序</p>
+<p>76.A．主键的值对用户而言是没有什么意义<br>    B．主键的主要作用是将记录和存放在其他表中的数据进行关联。<br>    C．一个主键是唯一识别一个表的每一记录，<br>    D．主键是不同表中各记录之间的简单指针。</p>
+<p>77.MySQL支持哪些逻辑运算符（CD）<br>    A．&amp;&amp;<br>    B．||<br>    C．NOT<br>    D．AND</p>
+<ol start="78">
+<li>对于显示操作以下说法正确的是（BD）<br>A．show database；显示所有数据库<br>B．show table；显示所有表<br>C．show tables；显示所有表<br>D．show databases；显示所有数据库</li>
+</ol>
+<p>79.语句select * from products where prod_name like ‘%se%’结果集包括( ABC   )<br>    A．检索products表中prod_name字段以’se’结尾的数据<br>    B．检索products表中prod_name字段以’se’居中的数据<br>    C．检索products表中prod_name字段包含’se’的数据<br>    D．检索products表中prod_name字段不包含’se’的数据</p>
+<p>80.下列语句正确的是（ABCD）<br>    A．alter table user drop column sex;<br>    B．alter table user add sex varchar(20);<br>    C．alter table user drop sex;<br>    D．alter table user modify id int primary key;</p>
+<p>81.下面对 union 的描述正确的是(    ACD  )<br>    A．union 只连接结果集完全一样的查询语句<br>    B．union 可以连接结果集中数据类型个数相同的多个结果集<br>    C．union 是筛选关键词，对结果集再进行操作<br>    D．任何查询语句都可以用 union 来连接</p>
+<p>82.下列哪一个逻辑运算符的优先级排列不正确( ACD     )<br>    A．AND/NOT/OR<br>    B．NOT/AND/OR<br>    C．OR/NOT /AND<br>    D．OR/AND/NOT</p>
+<p>83.关于insert语句下列正确的是（BD）<br>    A．insert into 表名values(字段名1对应的值);<br>    B．insert into 表名 values(字段名1对应的值，字段名2对应值);<br>    C．insert into 表名(字段名1)  value (字段名1对应的值);<br>    D．insert into 表名(字段名1，字段名2)  values(字段名1对应的值，字段名2对应值);</p>
+<p>84.下列语句错误的是( BD     )<br>    A．select * from orders where ordername is not null;<br>    B．select * from orders where ordername&lt;&gt;null;<br>    C．select * from orders where ordername is null;<br>    D．select * from orders where ordername not  is null;</p>
+<p>85.“show databases like ‘student%’”命令可以显示出以下数据库( ABD     )<br>    A．student_my<br>    B．studenty<br>    C．mystudent<br>    D．student </p>
+<p>86.下列正确的命令是(  ACD    )<br>    A．show tables;<br>    B．show columns;<br>    C．show columns from customers;<br>    D．show databases;</p>
+<p>87.关于数据库的单例连接说法正确的是(AD      )<br>    A．单例模式每次访问数据库，只需要创建一个单独的连接对象。<br>    B．单例模式只需要执行一次数据库连接，多次使用<br>    C．服务器和多个数据库分别建立单独的连接。<br>    D．可以防止数据库的多次连接给服务器造成负担。</p>
+<p>88.视图一般不用于下列哪些语句( ACD     )<br>    A．DELETE<br>    B．SELECT<br>    C．INSERT<br>    D．UPDATE</p>
+<p>89.下面关于使用UPDATE语句，正确的是( BCD     )<br>    A．被定义为NOT NULL的列不可以被更新为NULL<br>    B．不能在一个子查询中更新一个表，同时从同一个表中选择<br>    C．不能把ORDER BY或LIMIT与多表语法的UPDATE语句同时使用<br>    D．如果把一列设置为其当前含有的值，则该列不会更新</p>
+<p>90.在算术运算符、比较运算符、逻辑运算符，这三种符号中，它们的优先级排列不正确的是(  ACB    )<br>    A．算术/逻辑/比较<br>    B．比较/逻辑/算术<br>    C．比较/算术/逻辑<br>    D．算术/比较/逻辑</p>
+<p>91.关于DELETE和TRUNCATE TABLE的说法，正确的是(BD      )<br>    A．两者都可以删除指定条目的记录<br>    B．前者可以删除指定条目的记录，后者不能<br>    C．两者都反回被删除记录的数目<br>    D．前者返回被删除记录数目，后者不返回</p>
+<p>92.下列哪些列类型是数值型的数据(     ABD )。<br>    A．DOUBLE<br>    B．INT<br>    C．SET<br>    D．FLOAT<br>93．下列说法正确的是(  AB    )<br>    A．在MySQL中，不允许有空表存在，即一张数据表中不允许没有字段。<br>    B．在MySQL中，对于存放在服务器上的数据库，用户可以通过任何客户端进行访问。<br>    C．数据表的结构中包含字段名、类型、长度、记录。<br>    D．字符型数据其常量标志是单引号和双引号，且两种符号可以混用。</p>
+<p>94．下面数据库名称合法的是(CD      )<br>    A．db1/student<br>    B．db1.student<br>    C．db1_student<br>    D．db1&amp;student</p>
+<p>95．下面语句中，表示过虑条件是vend_id=1002或vend_id=1003的是(AB      )<br>    A．select * from products where vend_id=1002 or vend_id=1003<br>    B．select * from products where vend_id in (1002,1003);<br>    C．select * from products where vend_id not in (1004,1005);<br>    D．select * from products where vend_id=1002 and vend_id=1003</p>
+<p>96．数据库信息的运行安全采取的主措施有(   ABCD    )。<br>    A．备份与恢复<br>    B．应急<br>    C．风险分析<br>    D．审计跟踪 </p>
+<p>97.数据完整性是指（   D）。<br>A．数据库中的数据不存在重复<br>B. 数据库中的所有数据格式是一样的<br>C. 所有的数据全部保存在数据库中<br>D. 数据库中的数据能够正确地反应实际情况</p>
+<p>98.下列描述正确的是（B   ）。<br>A.一个数据库只能包含一个数据表<br>B.一个数据库可以包含多个数据表<br>C.一个数据库只能包含两个数据表<br>D.一个数据表可以包含多个数据库</p>
+<p>99.数据冗余是指（D）<br>A．数据与数据之间没有联系<br>B.数据有丢失<br>C．数据量太大<br>D.存在重复的数据</p>
+<ol start="100">
+<li>下列选项中不属于当今主流数据库的是（ D ）。<br>A.    Oracle<br>B.    SQL Server<br>C.    MySQL<br>D.    Access</li>
+</ol>
+<p>101.DBMS是( A  )<br>A．数据库管理系统<br>B.数据库系统<br>C．数据库<br>D．数据库管理员</p>
+<p>102.E-R 图是指 (D  )。<br>A. 实体分类图<br>B. 实体属性图<br>C. 数据模型图<br>D. 实体关系图</p>
+<p>103.外键FOREIGN KEY约束体现了（ C ）完整性<br>A. 实体<br>B. 域<br>C. 引用<br>D. 自定义完整性</p>
+<p>104.主键用来实施（A  ）<br>A.    实体完整性约束<br>B.    引用完整性约束<br>C.    域完整性约束<br>D.    自定义完整性约束</p>
+<p>105.在数据库中，有一个book(图书)表，包含字段：bookID（图书编号）、<br>title(书名)、pDate（出版日期）、author（作者）等字段，<br>其中（A  ）字段作为该表的主键是最恰当的。<br>A.    bookID<br>B.    title<br>C.    pDate<br>D.  author</p>
+<p>106.电话号码应当采用(A  )格式的数据类型来存储<br>A．字符<br>B.整数<br>C．浮点数<br>D．bit</p>
+<p>107.假设Employee表中EmpID列为主键，并且为自动增长，同时还有EmpGrade列和EmpSalaryGrade列，所有列的数据类型都是整数，目前还没有数据，则执行插入数据的T-SQL语句:<br>INSERT EmpLoyee(EmpID，EmpGrade，EmpSalaryGrade)VALUES(1，2，3)<br>运行结果将是：（A）<br>A.    插入数据成功，EmpID列的数据为1。<br>B.    插入数据成功，EmpID列的数据为2。<br>C.    插入数据成功，EmpGrade列的数据为3。<br>D.    插入数据失败。</p>
+<p>108.下列选项中不属于逻辑运算的是（D）。<br>A．    AND<br>B．    OR<br>C．    NOT<br>D．    NULL</p>
+<ol start="109">
+<li>下列选项中，可以用来删除表中部分数据的语句是（A）。<br>A.    DELETE语句<br>B.    INSERT语句<br>C.    UPDATE 语句<br>D.    DROP语句</li>
+</ol>
+<p>110.在表employee中有两列分别为年龄age、职位position，执行删除语句：<br>DELETE FROM employee WHERE age&lt;30 AND position=’项目经理’<br>下面包含（  B ）值的数据行可能被删除。<br>A.小于30岁的项目经理和所有员工<br>B.小于30岁的项目经理<br>C.小于30岁的员工和项目经理<br>D.小于30岁的员工或项目经理</p>
+<ol start="111">
+<li><p>在数据库中，有student（学生）表，包含字段SID（学号），SName（姓名），<br>Grade（成绩）。现要将所有学员的成绩加10分，下列SQL语句正确的是（D）。<br>A.    update student set Grade=Grade+10 where SID=1<br>B.    update * set Grade=Grade+10<br>C.    update * from student set Grade=Grade+10<br>D.    update student set Grade=Grade+10</p>
+</li>
+<li><p>查询条件为：姓名不是NULL的记录（ C ）<br>A.WHERE name ! NULL<br>B. WHERE name NOT NULL<br>C. WHERE name IS NOT NULL<br>D．WHERE name !=NULL</p>
+</li>
+</ol>
+<p>113.返回当前日期的函数是（  D）<br>A. curtime()<br>B. adddate()<br>C. curnow()<br>D. curdate()</p>
+<ol start="114">
+<li>employee表中lastName列保存顾客的姓，firstName列保存顾客的名。<br>现在需要查询顾客姓名的组合，例如，lastName列中的“张”，同一行firstName列中的<br>“国华”，查询结果应该返回“张国华”，则正确的查询语句应该是（C   ）。<br>A．SELECT lastName,firstName FROM employee;<br>B．SELECT * FROM employee ORDER BY laseName,firstName;<br>C．SELECT CONCAT(lastName,firstName) FROM employee;<br>D．SELECT lastName AND firstName FROM employee;</li>
+</ol>
+<p>115.取子字符串的函数是（  B ）。<br>A．trim()           B．substring()           C．sum()           D．concat()</p>
+<p>116.假设employee表有三列empID,empGrade，empSalaryGrade,并且列值都是整型数据类型，则以下( C )中的语句能正确执行。<br>A．SELECT empID  FROM employee ORDER BY empID  WHERE empID=empGrade<br>B. SELECT empID  FROM employee    WHERE empID=empGrade= empSalaryGrade<br>C. SELECT empID  FROM employee ORDER BY empGrade + empSalaryGrade<br>D. SELECT empID , empGrade  FROM employee WHERE empGrade + empSalaryGrade</p>
+<p>117.在客户表中查询出以”公司”结尾的客户的纪录，正确的SQL语句是(D )。<br>A．select * from 客户 where 公司名称 like ‘公司%’;<br>B．select * from 客户 where 公司名称 like ‘_公司’;<br>C．select * from 客户 where 公司名称 in ‘%公司’;<br>D．select * from 客户 where 公司名称 like ‘%公司’;</p>
+<p>118.以下(  C )不属于聚合函数<br>A.MAX( )<br>B.COUNT()<br>C.CONCAT()<br>D.MIN()</p>
+<p>119.在SQL聚合函数中,以下()用于返回表达式中所有值得总和( A  )<br>A.SUM()<br>B.COUNT()<br>C.AVG()<br>D.MAX()<br>120. 假设sales表用于存储销售信息，sName列为销售人员姓名，sMoney列为销售额度，<br>现在要查询最大一笔销售额度，则以下（C   ）查询语句的执行结果能得到这些信息。<br>A.SELECT MAX(sMoney) FROM sales where MAX(sMoney)&gt;0;<br>B.SELECT SUM(sMoney) FROM sales;<br>C.SELECT MAX(sMoney) FROM sales;<br>D.SELECT sName,MAX(sMoney)  FROM sales ORDER BY sName,sMoney;</p>
+<p>121.假设users表中的telNumber列存储电话号码信息，则查询不是以7开头的所有电话号码的查询语句是( C )<br>A.SELECT  telNumber FROM users WHERE telNumber IS NOT ‘%7’<br>B.SELECT  telNumber FROM users WHERE telNumber LIKE ‘%7%’<br>C. SELECT  telNumber FROM users WHERE telNumber NOT LIKE ‘7%’<br>D. SELECT  telNumber FROM users WHERE telNumber LIKE  ‘[1-6]%’<br>122．在全文本搜索的函数中，用于指定被搜索的列的是(   A   )</p>
+<p>A．MATCH()</p>
+<p>B．AGAINST()</p>
+<p>C．FULLTEXT()</p>
+<p>D．REGEXP()</p>
+<p>123．以下语句正确的是(  C    )</p>
+<p>A．select sal+1 from emp;</p>
+<p>B．select sal<em>10,sal</em>deptno from emp;</p>
+<p>C．不能使用运算符号</p>
+<p>D．select sal<em>10,deptno</em>10 from emp;</p>
+<p>124．下列(    C  )不属于连接种类</p>
+<p>A．左外连接</p>
+<p>B．内连接</p>
+<p>C．中间连接</p>
+<p>D．交叉连接</p>
+<p>125．若用如下的SQL语句创建了一个表SC：(  B    )</p>
+<p>CREATE TABLE SC （S# CHAR（6） NOT NULL，C# CHAR（3） NOT NULL，SCORE INTEGER，NOTE CHAR（20））；向SC表插入如下行时，（ ）行可以被插入 。</p>
+<p>A．（NULL，’103’，80，’选修’）</p>
+<p>B．（’200823’，’101’，NULL，NULL）</p>
+<p>C．（’201132’，NULL，86，’ ’）</p>
+<p>D．（’201009’，’111’，60，必修）</p>
+<p>126．删除用户账号命令是( A     )</p>
+<p>A．DROP USER</p>
+<p>B．DROP TABLE USER</p>
+<p>C．DELETE USER</p>
+<p>D．DELETE FROM USER</p>
+<p>127．以下语句错误的是(  A    )</p>
+<p>A． alter table emp delete column addcolumn;</p>
+<p>B． alter table emp modify column addcolumn char(10);</p>
+<p>C．alter table emp change addcolumn  addcolumn int;</p>
+<p>D． alter table emp add column addcolumn int;</p>
+<p>128．组合多条SQL查询语句形成组合查询的操作符是( D     )</p>
+<p>A．SELECT</p>
+<p>B．ALL</p>
+<p>C．LINK</p>
+<p>D．UNION<br>129．创建数据库使用以下哪项(     D )</p>
+<p>A．create mytest</p>
+<p>B．create table mytest</p>
+<p>C．database mytest</p>
+<p>D．create database mytest</p>
+<p>130．以下哪项用来分组(   C   )</p>
+<p>A．ORDER BY</p>
+<p>B．ORDERED BY</p>
+<p>C．GROUP BY</p>
+<p>D．GROUPED BY</p>
+<p>131．SQL是一种(  C    )语言。</p>
+<p>A． 函数型</p>
+<p>B．高级算法</p>
+<p>C．关系数据库</p>
+<p>D． 人工智能<br>132．删除数据表用以下哪一项(    A  )</p>
+<p>A．DROP</p>
+<p>B．UPDATE</p>
+<p>C．DELETE</p>
+<p>D．DELETED<br>133．若要在基本表S中增加一列CN（课程名），可用(  B    )</p>
+<p>A．ADD TABLE S ALTER（CN CHAR（８））</p>
+<p>B．ALTER TABLE S ADD（CN CHAR（８））</p>
+<p>C．ADD TABLE S（CN CHAR（８））</p>
+<p>D．ALTER TABLE S （ADD CN CHAR（８））</p>
+<p>134．下列的SQL语句中，(  B    )不是数据定义语句。</p>
+<p>A．CREATE TABLE</p>
+<p>B．GRANT</p>
+<p>C．CREATE VIEW</p>
+<p>D． DROP VIEW<br>135．以下删除记录正确的(  A    )</p>
+<p>A．delete from emp where name=’dony’;</p>
+<p>B．Delete * from emp where name=’dony’;</p>
+<p>C．Drop from emp where name=’dony’;</p>
+<p>D．Drop * from emp where name=’dony’;</p>
+<p>136．删除经销商1018的数据记录的代码为(  D    ) from distributors where distri_num=1018</p>
+<p>A．drop table</p>
+<p>B．delete *</p>
+<p>C．drop column</p>
+<p>D．delete</p>
+<p>137．按照姓名降序排列(    B  )</p>
+<p>A．ORDER BY DESC NAME</p>
+<p>B．ORDER BY NAME DESC</p>
+<p>C．ORDER BY NAME ASC</p>
+<p>D．ORDER BY  ASC NAME</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/18/mysql%E5%A4%8D%E4%B9%A0%E5%86%85%E5%AE%B9/" data-id="ck3mnr81k000id8tf7q4a8ku4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JQuery基础笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2019-11-18T01:04:17.000Z" itemprop="datePublished">2019-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">JQuery基础笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h2><pre><code>1. JQuery 基础：
+    1. 概念
+    2. 快速入门
+    3. JQuery对象和JS对象区别与转换
+    4. 选择器
+    5. DOM操作
+    6. 案例</code></pre><h1 id="JQuery-基础："><a href="#JQuery-基础：" class="headerlink" title="JQuery 基础："></a>JQuery 基础：</h1><pre><code>1. 概念： 一个JavaScript框架。简化JS开发
+    * jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨    是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优    化HTML文档操作、事件处理、动画设计和Ajax交互。
+
+    * JavaScript框架：本质上就是一些js文件，封装了js的原生代码而已
+2. 快速入门
+    1. 步骤：
+        1. 下载JQuery
+            * 目前jQuery有三个大版本：
+                1.x：兼容ie678,使用最为广泛的，官方只做BUG维护，
+                     功能不再新增。因此一般项目来说，使用1.x版本就可以了，
+                     最终版本：1.12.4 (2016年5月20日)
+                2.x：不兼容ie678，很少有人使用，官方只做BUG维护，
+                     功能不再新增。如果不考虑兼容低版本的浏览器可以使用2.x，
+                     最终版本：2.2.4 (2016年5月20日)
+                3.x：不兼容ie678，只支持最新的浏览器。除非特殊要求，
+                     一般不会使用3.x版本的，很多老的jQuery插件不支持这个版本。
+                     目前该版本是官方主要更新维护的版本。最新版本：3.2.1（2017年3月20日）
+            * jquery-xxx.js 与 jquery-xxx.min.js区别：
+                1. jquery-xxx.js：开发版本。给程序员看的，有良好的缩进和注释。体积大一些
+                2. jquery-xxx.min.js：生产版本。程序中使用，没有缩进。体积小一些。程序加载更快
+
+        2. 导入JQuery的js文件：导入min.js文件
+        3. 使用
+            var div1 = $(&quot;#div1&quot;);
+               alert(div1.html());
+
+
+3. JQuery对象和JS对象区别与转换
+    1. JQuery对象在操作时，更加方便。
+    2. JQuery对象和js对象方法不通用的.
+    3. 两者相互转换
+        * jq -- &gt; js : jq对象[索引] 或者 jq对象.get(索引)
+        * js -- &gt; jq : $(js对象)
+
+
+4. 选择器：筛选具有相似特征的元素(标签)
+
+    1. 基本操作学习：
+        1. 事件绑定
+            //1.获取b1按钮
+            $(&quot;#b1&quot;).click(function(){
+                alert(&quot;abc&quot;);
+            });
+        2. 入口函数
+             $(function () {
+
+                });
+             window.onload  和 $(function) 区别
+                 * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+                 * $(function)可以定义多次的。
+        3. 样式控制：css方法
+             // $(&quot;#div1&quot;).css(&quot;background-color&quot;,&quot;red&quot;);
+              $(&quot;#div1&quot;).css(&quot;backgroundColor&quot;,&quot;pink&quot;);
+
+
+    2. 分类
+        1. 基本选择器
+            1. 标签选择器（元素选择器）
+                * 语法： $(&quot;html标签名&quot;) 获得所有匹配标签名称的元素
+            2. id选择器 
+                * 语法： $(&quot;#id的属性值&quot;) 获得与指定id属性值匹配的元素
+            3. 类选择器
+                * 语法： $(&quot;.class的属性值&quot;) 获得与指定的class属性值匹配的元素
+            4. 并集选择器：
+                * 语法： $(&quot;选择器1,选择器2....&quot;) 获取多个选择器选中的所有元素
+        2. 层级选择器
+            1. 后代选择器
+                * 语法： $(&quot;A B &quot;) 选择A元素内部的所有B元素        
+            2. 子选择器
+                * 语法： $(&quot;A &gt; B&quot;) 选择A元素内部的所有B子元素
+        3. 属性选择器
+            1. 属性名称选择器 
+                * 语法： $(&quot;A[属性名]&quot;) 包含指定属性的选择器
+            2. 属性选择器
+                * 语法： $(&quot;A[属性名=&apos;值&apos;]&quot;) 包含指定属性等于指定值的选择器
+            3. 复合属性选择器
+                * 语法： $(&quot;A[属性名=&apos;值&apos;][]...&quot;) 包含多个属性条件的选择器
+        4. 过滤选择器
+            1. 首元素选择器 
+                * 语法： :first 获得选择的元素中的第一个元素
+            2. 尾元素选择器 
+                * 语法： :last 获得选择的元素中的最后一个元素
+            3. 非元素选择器
+                * 语法： :not(selector) 不包括指定内容的元素
+            4. 偶数选择器
+                * 语法： :even 偶数，从 0 开始计数
+            5. 奇数选择器
+                * 语法： :odd 奇数，从 0 开始计数
+            6. 等于索引选择器
+                * 语法： :eq(index) 指定索引元素
+            7. 大于索引选择器 
+                * 语法： :gt(index) 大于指定索引元素
+            8. 小于索引选择器 
+                * 语法： :lt(index) 小于指定索引元素
+            9. 标题选择器
+                * 语法： :header 获得标题（h1~h6）元素，固定写法
+        5. 表单过滤选择器
+            1. 可用元素选择器 
+                * 语法： :enabled 获得可用元素
+            2. 不可用元素选择器 
+                * 语法： :disabled 获得不可用元素
+            3. 选中选择器 
+                * 语法： :checked 获得单选/复选框选中的元素
+            4. 选中选择器 
+                * 语法： :selected 获得下拉框选中的元素
+
+5. DOM操作
+    1. 内容操作
+        1. html(): 获取/设置元素的标签体内容   &lt;a&gt;&lt;font&gt;内容&lt;/font&gt;&lt;/a&gt;  --&gt; &lt;font&gt;内容&lt;/font&gt;
+        2. text(): 获取/设置元素的标签体纯文本内容   &lt;a&gt;&lt;font&gt;内容&lt;/font&gt;&lt;/a&gt; --&gt; 内容
+        3. val()： 获取/设置元素的value属性值
+    2. 属性操作
+        1. 通用属性操作
+            1. attr(): 获取/设置元素的属性
+            2. removeAttr():删除属性
+            3. prop():获取/设置元素的属性
+            4. removeProp():删除属性
+
+            * attr和prop区别？
+                1. 如果操作的是元素的固有属性，则建议使用prop
+                2. 如果操作的是元素自定义的属性，则建议使用attr
+        2. 对class属性操作
+            1. addClass():添加class属性值
+            2. removeClass():删除class属性值
+            3. toggleClass():切换class属性
+                * toggleClass(&quot;one&quot;): 
+                    * 判断如果元素对象上存在class=&quot;one&quot;，则将属性值one删除掉。  如果元素对象上不存在class=&quot;one&quot;，则添加
+            4. css():
+    3. CRUD操作:
+        1. append():父元素将子元素追加到末尾
+            * 对象1.append(对象2): 将对象2添加到对象1元素内部，并且在末尾
+        2. prepend():父元素将子元素追加到开头
+            * 对象1.prepend(对象2):将对象2添加到对象1元素内部，并且在开头
+        3. appendTo():
+            * 对象1.appendTo(对象2):将对象1添加到对象2内部，并且在末尾
+        4. prependTo()：
+            * 对象1.prependTo(对象2):将对象1添加到对象2内部，并且在开头
+
+
+        5. after():添加元素到元素后边
+            * 对象1.after(对象2)： 将对象2添加到对象1后边。对象1和对象2是兄弟关系
+        6. before():添加元素到元素前边
+            * 对象1.before(对象2)： 将对象2添加到对象1前边。对象1和对象2是兄弟关系
+        7. insertAfter()
+            * 对象1.insertAfter(对象2)：将对象2添加到对象1后边。对象1和对象2是兄弟关系
+        8. insertBefore()
+            * 对象1.insertBefore(对象2)： 将对象2添加到对象1前边。对象1和对象2是兄弟关系
+
+        9. remove():移除元素
+            * 对象.remove():将对象删除掉
+        10. empty():清空元素的所有后代元素。
+            * 对象.empty():将对象的后代元素全部清空，但是保留当前对象以及其属性节点
+
+
+6. 案例</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/18/JQuery%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" data-id="ck3mnr80o0000d8tfhyfcgflm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jsp第五次课讲义" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" class="article-date">
+  <time datetime="2019-11-18T00:53:50.000Z" itemprop="datePublished">2019-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/">jsp第五次课讲义</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>动态网站开发第五次课讲义<br>一、学习目标</p>
+<ol>
+<li>JSP进一步讲解:<ol>
+<li>指令</li>
+<li>注释</li>
+<li>内置对象</li>
+</ol>
+</li>
+<li>MVC开发模式</li>
+<li>EL表达式</li>
+<li>JSTL标签</li>
+<li>三层架构<br>二、具体讲解</li>
+<li>1、JSP进一步讲解<ol>
+<li>指令<br>   作用：用于配置JSP页面，导入资源文件<br>   格式：<pre><code>&lt;%@ 指令名称 属性名1=属性值1 属性名2=属性值2 ... %&gt;</code></pre>   分类：<pre><code>1. page： 配置JSP页面的
+    contentType：等同于response.setContentType()
+        1. 设置响应体的mime类型以及字符集
+        2. 设置当前jsp页面的编码（只能是高级的IDE才能生效，如果使</code></pre>用低级工具，则需要设置pageEncoding属性设置当前页面的字符集）<pre><code>    import：导包 &lt;%@ page &gt;
+    errorPage：当前页面发生异常后，会自动跳转到指定的错误页面
+    isErrorPage：标识当前也是是否是错误页面。
+        true：是，可以使用内置对象exception
+        false：否。默认值。不可以使用内置对象exception
+2. include    ： 页面包含的。导入页面的资源文件
+    &lt;%@include file=&quot;top.jsp&quot;%&gt;
+3. taglib    ： 导入资源
+    &lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+     prefix：前缀，自定义的</code></pre></li>
+</ol>
+</li>
+<li>注释:<ol>
+<li>html注释： <!-- -->:只能注释html代码片段</li>
+<li>jsp注释：推荐使用<br> &lt;%– –%&gt;：可以注释所有</li>
+</ol>
+</li>
+<li>内置对象<br> 在jsp页面中不需要创建，直接使用的对象<br> 一共有9个：<pre><code>变量名                    真实类型                作用
+pageContext                PageContext            当前页面共享数据，还  
+                可以获取其他八个内置对象</code></pre></li>
+</ol>
+<p>request            HttpServletRequest         一次请求访问的多个资源(转发)<br>          session                    HttpSession             一次会话的多个请求间<br>          application                ServletContext             所有用户间共享数据<br>          response                HttpServletResponse     响应对象<br>           page                      Object                 当前页面(Servlet)的对象this<br>            out                     JspWriter             输出对象，数据输出到页面上<br>           config                    ServletConfig                Servlet的配置对象<br>         exception                 Throwable                异常对象<br>2.2、 MVC：开发模式    </p>
+<ol>
+<li>jsp演变历史<pre><code>1. 早期只有servlet，只能使用response输出标签数据，非常麻烦
+2. 后来又jsp，简化了Servlet的开发，如果过度使用jsp，在jsp中即写大量的</code></pre>java代码，有写html表，造成难于维护，难于分工协作<pre><code>3. 再后来，java的web开发，借鉴mvc开发模式，使得程序的设计更加合理性</code></pre><ol start="2">
+<li>MVC：<ol>
+<li>M：Model，模型。JavaBean<br> 完成具体的业务操作，如：查询数据库，封装对象</li>
+<li>V：View，视图。JSP<br> 展示数据</li>
+<li>C：Controller，控制器。Servlet<br> 获取用户的输入<br> 调用模型<br> 将数据交给视图进行展示<br>优缺点：<ol>
+<li>优点：<ol>
+<li>耦合性低，方便维护，可以利于分工协作</li>
+<li>重用性高</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>使得项目架构变得复杂，对开发人员要求高</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>3、EL表达式</li>
+<li>概念：Expression Language 表达式语言</li>
+<li>作用：替换和简化jsp页面中java代码的编写</li>
+<li>语法：${表达式}</li>
+<li>注意：<br>jsp默认支持el表达式的。如果要忽略el表达式<ol>
+<li>设置jsp中page指令中：isELIgnored=”true” 忽略当前jsp页面中所有的el表达式</li>
+<li>${表达式} ：忽略当前这个el表达式</li>
+</ol>
+</li>
+<li>使用：<ol>
+<li>运算：<br> 运算符：<pre><code>1. 算数运算符： + - * /(div) %(mod)
+2. 比较运算符： &gt; &lt; &gt;= &lt;= == !=
+3. 逻辑运算符： &amp;&amp;(and) ||(or) !(not)
+4. 空运算符： empty
+ 功能：用于判断字符串、集合、数组对象是否为null或者长度是否为0
+    ${empty list}:判断字符串、集合、数组对象是否为null或者长度为0
+    ${not empty str}:表示判断字符串、集合、数组对象是否不为null </code></pre>并且 长度&gt;0<ol start="2">
+<li>获取值<ol>
+<li>el表达式只能从域对象中获取值</li>
+<li>语法：<ol>
+<li>${域名称.键名}：从指定域中获取指定键的值<br>域名称：<pre><code>1. pageScope        --&gt; pageContext
+2. requestScope     --&gt; request
+3. sessionScope     --&gt; session
+4. applicationScope --&gt; application（ServletContext）</code></pre>举例：在request域中存储了name=张三<br>获取：${requestScope.name}</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ol start="2">
+<li><p>${键名}：表示依次从最小的域中查找是否有该键对应的值，直到找<br>到为止。</p>
+<pre><code>       3. 获取对象、List集合、Map集合的值
+           1. 对象：${域名称.键名.属性名}
+               本质上会去调用对象的getter方法
+           2. List集合：${域名称.键名[索引]}
+           3. Map集合：
+               ${域名称.键名.key名称}
+               ${域名称.键名[&quot;key名称&quot;]}
+3. 隐式对象：
+    el表达式中有11个隐式对象
+    pageContext：
+        获取jsp其他八个内置对象
+            ${pageContext.request.contextPath}：动态获取虚拟目录</code></pre></li>
+<li><p>4、JSTL表达式</p>
+<ol>
+<li>概念：JavaServer Pages Tag Library  JSP标准标签库<br>   是由Apache组织提供的开源的免费的jsp标签&lt;标签&gt;</li>
+</ol>
+</li>
+<li><p>作用：用于简化和替换jsp页面上的java代码        </p>
+</li>
+<li><p>使用步骤：</p>
+<pre><code>1. 导入jstl相关jar包
+2. 引入标签库：taglib指令：  &lt;%@ taglib %&gt;
+3. 使用标签</code></pre></li>
+<li><p>常用的JSTL标签</p>
+<pre><code>1. if:相当于java代码的if语句
+    1. 属性：
+       test 必须属性，接受boolean表达式
+           如果表达式为true，则显示if标签体内容，如果为false，则不显示</code></pre><p>标签体内容</p>
+<pre><code>            一般情况下，test属性值会结合el表达式一起使用
+        2. 注意：
+            c:if标签没有else情况，想要else情况，则可以在定义一个c:if标签
+2. choose:相当于java代码的switch语句
+    1. 使用choose标签声明                     相当于switch声明
+    2. 使用when标签做判断                     相当于case
+    3. 使用otherwise标签做其他情况的声明        相当于default
+3. foreach:相当于java代码的for语句</code></pre></li>
+<li><p>练习：</p>
+<pre><code>需求：在request域中有一个存有User对象的List集合。需要使用jstl+el将list</code></pre><p>集合数据展示到jsp页面的表格table中</p>
+</li>
+<li><p>5、 案例：用户信息列表展示</p>
+<ol>
+<li><p>需求：用户信息的增删改查操作</p>
+</li>
+<li><p>设计：</p>
+<ol>
+<li>技术选型：Servlet+JSP+MySQL+JDBCTempleat+Duird+BeanUtilS+tomcat</li>
+<li>数据库设计：<br> create database day17; – 创建数据库<br> use day17;                – 使用数据库<br> create table user(   – 创建表<pre><code>id int primary key auto_increment,
+name varchar(20) not null,
+gender varchar(5),
+age int,
+address varchar(32),
+qq    varchar(20),
+email varchar(50)</code></pre> );</li>
+</ol>
+</li>
+<li><p>开发：</p>
+<ol>
+<li><p>环境搭建</p>
+<ol>
+<li>创建数据库环境</li>
+<li>创建项目，导入需要的jar包</li>
+</ol>
+</li>
+<li><p>编码</p>
+</li>
+</ol>
+</li>
+<li><p>测试</p>
+</li>
+<li><p>部署运维</p>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/18/jsp%E7%AC%AC%E4%BA%94%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mnr81h000fd8tf0rrt0wxa" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jsp第四次课讲义" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/13/jsp%E7%AC%AC%E5%9B%9B%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" class="article-date">
+  <time datetime="2019-11-13T06:41:23.000Z" itemprop="datePublished">2019-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/13/jsp%E7%AC%AC%E5%9B%9B%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/">jsp第四次课讲义</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>动态网站开发第四次课讲义<br>一、学习目标<br>    1. 会话技术<br>        1. Cookie<br>        2. Session<br>二、具体讲解<br>2.1、会话技术</p>
+<ol>
+<li>会话：一次会话中包含多次请求和响应。<br>一次会话：浏览器第一次给服务器资源发送请求，会话建立，直到有一方<br>断开为止<ol start="2">
+<li>功能：在一次会话的范围内的多次请求间，共享数据</li>
+<li>方式：<ol>
+<li>客户端会话技术：Cookie</li>
+<li>服务器端会话技术：Session</li>
+</ol>
+</li>
+<li>2、Cookie</li>
+</ol>
+</li>
+<li>概念：客户端会话技术，将数据保存到客户端<ol start="2">
+<li>快速入门：<br>使用步骤：<ol>
+<li>创建Cookie对象，绑定数据<br> new Cookie(String name, String value) </li>
+<li>发送Cookie对象<br> response.addCookie(Cookie cookie) </li>
+<li>获取Cookie，拿到数据<br> Cookie[]  request.getCookies()  </li>
+</ol>
+</li>
+<li>实现原理<br>基于响应头set-cookie和请求头cookie实现</li>
+<li>cookie的细节<ol>
+<li>一次可不可以发送多个cookie?<br> 可以<br> 可以创建多个Cookie对象，使用response调用多次addCookie方法发送<br>cookie即可。</li>
+<li>cookie在浏览器中保存多长时间？<ol>
+<li>默认情况下，当浏览器关闭后，Cookie数据被销毁</li>
+<li>持久化存储：<br> setMaxAge(int seconds)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>正数：将Cookie数据写到硬盘的文件中。持久化存储。并指<br>定cookie存活时间，时间到后，cookie文件自动失效<pre><code>2. 负数：默认值
+3. 零：删除cookie信息</code></pre><ol start="3">
+<li>cookie能不能存中文？<pre><code>在tomcat 8 之前 cookie中不能直接存储中文数据。
+需要将中文数据转码---一般采用URL编码(%E3)
+在tomcat 8 之后，cookie支持中文数据。特殊字符还是不</code></pre>支持，建议使<br>用URL编码存储，URL解码解析</li>
+<li>cookie共享问题？<ol>
+<li>假设在一个tomcat服务器中，部署了多个web项目，那么在这些web<br>项目中cookie能不能共享？<br>  *默认情况下cookie不能共享<br>  *setPath(String path):设置cookie的获取范围。默认情况下，设置当前的<br>虚拟目录<ul>
+<li>如果要共享，则可以将path设置为”/“<ol start="2">
+<li>不同的tomcat服务器间cookie共享问题？</li>
+</ol>
+</li>
+<li>setDomain(String path):如果设置一级域名相同，那么多个服务器之<br>间cookie可以共享</li>
+<li>setDomain(“.baidu.com”),那么tieba.baidu.com和news.baidu.com<br>中cookie可以共享</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Cookie的特点和作用<br>特点：<pre><code>1. cookie存储数据在客户端浏览器
+2. 浏览器对于单个cookie 的大小有限制(4kb) 以及 </code></pre>对同一个域名下的总cookie数量也有限制(20个)<br> 作用：<pre><code>1. cookie一般用于存出少量的不太敏感的数据
+2. 在不登录的情况下，完成服务器对客户端的</code></pre>身份识别</li>
+<li>案例：记住上一次访问时间<ol>
+<li>需求：<ol>
+<li>访问一个Servlet，如果是第一次访问，则提示：您好，欢迎您首次访问。</li>
+<li>如果不是第一次访问，则提示：欢迎回来，您上次访问时间为:显示时<br>间字符串</li>
+</ol>
+</li>
+<li>分析：<ol>
+<li>可以采用Cookie来完成</li>
+<li>在服务器中的Servlet判断是否有一个名为lastTime的cookie<ol>
+<li>有：不是第一次访问<ol>
+<li>响应数据：欢迎回来，您上次访问时间为:2018年6月10日11:50:20</li>
+<li>写回Cookie：lastTime=2018年6月10日11:50:01</li>
+</ol>
+</li>
+<li>没有：是第一次访问<ol>
+<li>响应数据：您好，欢迎您首次访问</li>
+<li>写回Cookie：lastTime=2018年6月10日11:50:01</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>代码实现：</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>2、session</li>
+<li>概念：服务器端会话技术，在一次会话的多次请求间共享数据，将数据保存在服<br>务器端的对象中。HttpSession</li>
+<li>快速入门：<ol>
+<li>获取HttpSession对象：<br> HttpSession session = request.getSession();</li>
+<li>使用HttpSession对象：<br> Object getAttribute(String name)<br> void setAttribute(String name, Object value)<br> void removeAttribute(String name)  </li>
+</ol>
+</li>
+<li>原理:<pre><code>Session的实现是依赖于Cookie的。</code></pre></li>
+<li>细节：</li>
+<li>当客户端关闭后，服务器不关闭，两次获取session是否为同一个？<pre><code>* 默认情况下。不是。
+* 如果需要相同，则可以创建Cookie,键为JSESSIONID，设置最大存活时</code></pre>间，让cookie持久化保存。<pre><code>Cookie c = new Cookie(&quot;JSESSIONID&quot;,session.getId());
+c.setMaxAge(60*60);
+response.addCookie(c);</code></pre><ol start="2">
+<li>客户端不关闭，服务器关闭后，两次获取的session是同一个吗？<ul>
+<li>不是同一个，但是要确保数据不丢失。tomcat自动完成以下工作<ul>
+<li>session的钝化：<ul>
+<li>在服务器正常关闭之前，将session对象系列化到硬盘上</li>
+</ul>
+</li>
+<li>session的活化：<ul>
+<li>在服务器启动后，将session文件转化为内存中的session对象即可。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>session什么时候被销毁？<ol>
+<li>服务器关闭</li>
+<li>session对象调用invalidate() 。</li>
+<li>session默认失效时间 30分钟<br> 选择性配置修改     <session-config>
+     <session-timeout>30</session-timeout>
+ </session-config></li>
+</ol>
+</li>
+<li>session的特点<ol>
+<li>session用于存储一次会话的多次请求的数据，存在服务器端</li>
+<li>session可以存储任意类型，任意大小的数据<br>session与Cookie的区别：<ol>
+<li>session存储数据在服务器端，Cookie在客户端</li>
+<li>session没有数据大小限制，Cookie有</li>
+<li>session数据安全，Cookie相对于不安全<h2 id="案例：验证码"><a href="#案例：验证码" class="headerlink" title="案例：验证码"></a>案例：验证码</h2></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>案例需求：<ol>
+<li>访问带有验证码的登录页面login.jsp</li>
+<li>用户输入用户名，密码以及验证码。<ul>
+<li>如果用户名和密码输入有误，跳转登录页面，提示:用户名或密码错误</li>
+<li>如果验证码输入有误，跳转登录页面，提示：验证码错误</li>
+<li>如果全部输入正确，则跳转到主页success.jsp，显示：用户名,欢迎您</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>分析：</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/13/jsp%E7%AC%AC%E5%9B%9B%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mnr81g000ed8tf086p4tq0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-动态网站开发第二次课讲义-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89-1/" class="article-date">
+  <time datetime="2019-11-06T11:18:38.000Z" itemprop="datePublished">2019-11-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89-1/">动态网站开发第二次课讲义 (1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> 动态网站开发第二次课讲义<br>一、学习目标<br>1、了解tomcat目录结构<br>2、了解java web项目目录结构<br>3、掌握jsp概念<br>4、了解Servlet概念，创建servlet<br>5、掌握Servlet的执行原理和生命周期<br>6、servlet系统结构<br>7、理解HTTP协议及HTTP请求的结构（请求行，头，体）<br>8、熟练掌握使用HttpServeltRequest获取常用的头信息，请求参数，请求参数乱码处理，转发的特点<br>9、熟练掌握登陆案例<br>二、具体讲解<br>2.1、tomcat目录结构详解<br>打开tomcat的解压之后的目录可以看到如下的目录结构：</p>
+<p>1、bin：<br>bin目录主要是用来存放tomcat的命令，主要有两大类，一类是以.sh结尾的（linux命令），另一类是以.bat结尾的（windows命令）。可以把命令配置在环境变量里边<br>startup 用来启动tomcat<br>shutdown 用来关闭tomcat<br>修改catalina可以设置tomcat的内存<br>2、webapps：<br>webapps目录用来存放应用程序，当tomcat启动时会去加载webapps目录下的应用程序。可以以文件夹、war包、jar包的形式发布应用。<br>当然，你也可以把应用程序放置在磁盘的任意位置，在配置文件中映射好就行。<br>3、conf<br>conf目录主要是用来存放tomcat的一些配置文件。<br>server.xml可以设置端口号、设置域名或IP、默认加载的项目、请求编码<br>web.xml可以设置tomcat支持的文件类型<br>context.xml可以用来配置数据源之类的<br>tomcat-users.xml用来配置管理tomcat的用户与权限<br>4、lib:<br>lib目录主要用来存放tomcat运行需要加载的jar包。<br>例如，像连接数据库的jdbc的包我们可以加入到lib目录中来。<br>5、logs：<br>logs目录用来存放tomcat在运行过程中产生的日志文件，非常重要的是在控制台输出的日志。（清空不会对tomcat运行带来影响）<br>在windows环境中，控制台的输出日志在catalina.xxxx-xx-xx.log文件中<br>在linux环境中，控制台的输出日志在catalina.out文件中<br>6、temp：<br>temp目录用户存放tomcat在运行过程中产生的临时文件。（清空不会对tomcat运行带来影响<br>7、work:<br>work目录用来存放tomcat在运行时的编译后文件，例如JSP编译后的文件。<br>清空work目录，然后重启tomcat，可以达到清除缓存的作用。<br>2.2、了解java web项目目录结构</p>
+<p>web.xml配置文件</p>
+<p>项目启动时会加载web.xml配置文件<br>Web.xml文件的作用如下<br>1、指定欢迎页面，例如：</p>
+<p>上面的例子指定了几个欢迎页面，显示时按顺序从第一个找起，如果第一个存在，就显示第一个，后面的不起作用。如果第一个不存在，就找第二个，以此类推。<br>2、配置servlet、filter、<br>我们以后创建的servlet与filter需要在web.xml中配置才会生效，至于怎么配置后边的课程讲<br>2.3、掌握jsp概念<br>1、基本概念<br>JSP是运行在服务器端的程序，负责java web项目中的数据展示，以及前后数据的中转与交互<br>JSP页面中，可以写html、css、js代码、java代码、el表达式、jstl标签</p>
+<p>分别在jsp里边写对应的代码</p>
+<p>由于以后jsp里边不写java代码，就不过多演示了</p>
+<p>注意：如何设置jsp的编码格式<br>点击window——–&gt;preferences<br>然后搜索jsp<br>点击JSP Files选择utf-8编码格式</p>
+<p>2、jsp的执行流程<br>翻译阶段<br>   当Web容器接收到JSP请求时，首先会对JSP文件进行翻译，将编写好的JSP文件通过JSP容器转换成可识别的Java源代码。<br>编译阶段<br>    将Java源文件编译成可执行的字节码文件<br>执行阶段<br>   经过翻译和编译两个阶段，生成了可执行的二进制字节码文件，此时进入执行阶段。当执行结束后，得到处理请求的结果，把生成的结果页面返回到浏览器客户端显示。</p>
+<p>2.4、了解Servlet概念,创建servlet<br>Servlet概念以及作用<br>Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。<br>   用户在jsp页面上输入数据，可以提交给servlet做处理，java代码读到的数据，可以通过servlet交给jsp页面去展示。这在项目中就充当了，控制与中转的功能。<br>创建servlet</p>
+<ol>
+<li><p>创建JavaEE项目</p>
+</li>
+<li><p>定义一个类，实现Servlet接口</p>
+</li>
+<li><p>实现接口中的抽象方法</p>
+</li>
+<li><p>配置Servlet<br>在web.xml中配置：</p>
+<!--配置Servlet -->
+<servlet>
+<servlet-name>ServletDemo1</servlet-name>
+<servlet-class>com.dzqc.web.servlet.ServletDemo1</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ServletDemo1</servlet-name>
+<url-pattern>/demo1</url-pattern>
+</servlet-mapping></li>
+<li><p>5、servlet执行原理</p>
+</li>
+<li><p>当服务器接受到客户端浏览器的请求后，会解析请求URL路径，获取访问的Servlet的资源路径</p>
+</li>
+<li><p>查找web.xml文件，是否有对应的<url-pattern>标签体内容。</p>
+</li>
+<li><p>如果有，则在找到对应的<servlet-class>全类名</p>
+</li>
+<li><p>tomcat会将字节码文件加载进内存，并且创建其对象</p>
+</li>
+<li><p>调用其方法</p>
+</li>
+<li><p>6、servlet生命周期</p>
+</li>
+<li><p>被创建：执行init方法，只执行一次</p>
+</li>
+<li><p>提供服务：执行service方法，执行多次，servelt核心方法</p>
+</li>
+<li><p>被销毁：执行destroy方法，只执行一次<br>演示案例如下</p>
+</li>
+</ol>
+<p>2.7、servlet体系结构<br>Servlet有一个子类为GenericServlet，GenericServlet又有一个子类为HttpServlet，在创建servlet时，可以实现Servlet接口，也可以继承GenericServlet类。但在项目中创建Servlet的方式为，继承HttpServlet类。<br>创建的方式如下： new—-》servlet</p>
+<p>2.7、理解HTTP协议及HTTP请求的结构（请求行，头，体）<br>我们已经掌握了如何创建Servlet,但Servlet的真正作用为处理用于户的请求，以及对用户的请求做响应，那么我们就要知道会发送哪几种请求，要想理解请求，就要先知道Http协议与Http请求结构<br>HTTP协议概念<br>Hyper Text Transfer Protocol 超文本传输协议，定义了，客户端和服务器端通信时，发送数据的格式<br>特点：</p>
+<ol>
+<li>基于TCP/IP的高级协议</li>
+<li>默认端口号:80</li>
+<li>基于请求/响应模型的:一次请求对应一次响应</li>
+<li>无状态的：每次请求之间相互独立，不能交互数据<br>历史版本：</li>
+<li>0：每一次请求响应都会建立新的连接</li>
+<li>1：复用连接<br>HTTP协议的请求行，请求头，请求体</li>
+<li>请求行<br>请求行包含的内容如下：<br>   请求方式   请求url      请求协议/版本<pre><code>GET     /login.html       HTTP/1.1</code></pre>请求方式：<pre><code>HTTP协议有7中请求方式，常用的有2种
+  GET：
+    1. 请求参数在请求行中，在url后。
+    2. 请求的url长度有限制的
+    3. 不太安全
+  POST：
+    1. 请求参数在请求体中
+    2. 请求的url长度没有限制的
+    3. 相对安全</code></pre>2、Http协议请求头：<br>请求头的主要作用为：客户端浏览器告诉服务器一些信息<br>1、浏览器告诉服务器，我访问你使用的浏览器版本信息<br>2、告诉服4务器，我(当前请求)从哪里来？<br>3、Http协议请求体：<br>封装POST请求消息的请求参数的，换句话说请求体里放的是要提交给服务器的内容，例如账户名、密码。<br>总结一下：<br>通过以上的学习，就知道我们发送请求时，第一要确定请求方式，是post请求或get请求。第二要知道我们的所传递的内容是在请求中放的。</li>
+<li>8、熟练掌握使用HttpServeltRequest获取常用的头信息，请求参数，请求参数乱码处理，转发的特点<br>当用户发送请求时，服务器会创建两个对象，一个是HttpServeltRequest类的请求对象，一个HttpServletResponse类的响应对象。<br>1、request对象和response对象的原理<ol>
+<li>request和response对象是由服务器创建的。我们来使用它们</li>
+<li>request对象是来获取请求消息，response对象是来设置响应消息<br>首先学习request对象<br>2、request对象继承体系结构：<br> ServletRequest        –    接口<pre><code>|    继承</code></pre> HttpServletRequest    – 接口<pre><code>|    实现</code></pre> org.apache.catalina.connector.RequestFacade 类(tomcat)<br>3、request功能：<br>1、获取请求消息数据<ol>
+<li>获取请求行数据<br>GET  /day14/demo1?name=zhangsan  HTTP/1.1<br>方法：<ol>
+<li>获取请求方式 ：GET<br> String getMethod()  </li>
+<li>获取虚拟目录：/day14<br> String getContextPath()</li>
+<li>获取Servlet路径: /demo1<br> String getServletPath()</li>
+<li>获取get方式请求参数：name=zhangsan<br> String getQueryString()</li>
+<li>获取请求URI：/day14/demo1<br> String getRequestURI():        /day14/demo1<br> StringBuffer getRequestURL()  :<a href="http://localhost/day14/demo1" target="_blank" rel="noopener">http://localhost/day14/demo1</a><br>URL：统一资源定位符 ： <a href="http://localhost/day14/demo1" target="_blank" rel="noopener">http://localhost/day14/demo1</a><br> URI：统一资源标识符 : /day14/demo1                        </li>
+<li>获取协议及版本：HTTP/1.1<br> String getProtocol()</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>获取客户机的IP地址：<pre><code>String getRemoteAddr()</code></pre></li>
+<li>获取请求头数据<pre><code>  方法：
+    String getHeader(String name):通过请求头的名称获取请求头的值
+    Enumeration&lt;String&gt; getHeaderNames():获取所有的请求头名称
+3.获取请求体数据:
+  请求体：只有POST请求方式，才有请求体
+   步骤：
+     1. 获取流对象
+        BufferedReader getReader()：获取字符输入流，只能操作字符数据
+        ServletInputStream getInputStream()：获取字节输入流
+                                         在文件上传知识点后讲解</code></pre></li>
+<li>再从流对象中拿数据<br>2、其它功能（重要）<br>1、获取请求参数通用方式：不论get还是post请求方式都可以使用下列方法来获取请求参数<br> 1.String getParameter(String name):根据参数名称获取参数值<ol start="2">
+<li>String[] getParameterValues(String name):根据参数名称获取参数值的数  组</li>
+<li>Enumeration<String> getParameterNames():获取所有请求的参数名称</li>
+<li>Map&lt;String,String[]&gt; getParameterMap():获取所有参数的map集合<br>中文乱码问题：<br> get方式：tomcat 8 已经将get方式乱码问题解决了<br> post方式：会乱码<br>解决：在获取参数前，设置request的编码request.setCharacterEncoding(“utf-8”);<br>2、请求转发：一种在服务器内部的资源跳转方式<br>1、步骤：</li>
+</ol>
+</li>
+<li>通过request对象获取请求转发器对象：<br>RequestDispatcher getRequestDispatcher(String path)</li>
+<li>使用RequestDispatcher对象来进行转发：<br>forward(ServletRequest request, ServletResponse response)<br>  2、特点：<pre><code>1. 浏览器地址栏路径不发生变化
+2. 只能转发到当前服务器内部资源中。
+3. 转发是一次请求</code></pre>3、共享数据：<pre><code>域对象：一个有作用范围的对象，可以在范围内共享数据
+request域：代表一次请求的范围，一般用于请求转发的多个资源中共享数据
+  方法：
+     1. void setAttribute(String name,Object obj):存储数据
+     2. Object getAttitude(String name):通过键获取值
+     3. void removeAttribute(String name):通过键移除键值对</code></pre></li>
+<li>获取ServletContext：<pre><code>ServletContext getServletContext()</code></pre>讲解案例：</li>
+</ol>
+<p>2.9、熟练掌握登陆案例</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89-1/" data-id="ck3mnr81m000kd8tfgsdvdkwh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-动态网站开发第三次课讲义" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" class="article-date">
@@ -194,7 +1523,7 @@ hello , response
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mmx9aq000dp0tfbnpd3qz4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/06/%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E8%AF%BE%E8%AE%B2%E4%B9%89/" data-id="ck3mnr81n000ld8tfaw777bsi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -447,7 +1776,7 @@ hello , response
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/24/xml%E7%AC%94%E8%AE%B0/" data-id="ck3mmx9af000cp0tfcjb7boa2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/24/xml%E7%AC%94%E8%AE%B0/" data-id="ck3mnr81j000hd8tf48la90mv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -934,192 +2263,7 @@ hello , response
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/" data-id="ck3mmx9a70006p0tf7e5vblqc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/23/1/" class="article-date">
-  <time datetime="2019-10-23T03:36:38.204Z" itemprop="datePublished">2019-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/1/">1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>Java面向对象程序设计</code></pre><p>第一章 复习<br>1.数据类型<br>普通数据：bety、int、short、long、float、docuble、boolean、char<br>引用数据：String和各种对象构成的数据。</p>
-<p>第二章 类和对象<br>1.类和对象的概念<br>类：类是有共同特征，共同行为的一类事物的统称。<br>对象：现实世界客观存在的事物都可看作对象。</p>
-<p>2.面向过程和面向对象<br>    面向过程：分析出解决问题所需要的步骤，然后把这些步骤一步一步实现。<br>    面向对象：符合人类思考习惯的一种编程思想。这种思想是执行者变为指挥者。提高了代码的复用性及可扩展性。</p>
-<p>3.程序的执行过程<br>    从main方法第一行开始，执行到main方法最后一行结束。</p>
-<p>4.类的成员（组成部分）<br>    ○1成员变量<br>○2构造方法<br>○3成员方法<br>○4静态方法<br>○5代码块<br>○6静态代码块</p>
-<p>5.构造方法<br>    特点：构造方法的名称与类名相同，没有返回值类型，在没有构造方法时，系统会提供一个无参的方法体为空的构造方法。构造方法分为有参和无参两种。<br>    作用：调用带参的构造方法创建对象，在创建对象时执行一些初始化操作，如给成员属性赋初值。<br>    语法：<br>        public 构造方法名(){<br>            方法体;<br>}</p>
-<p>6.构造方法的重载<br>    概念及特点：方法名相同，参数个数或参数类型不同，称为构造方法的重载。<br>    作用：通过构造方法的重载来实现多种初始化行为，在创建对象时可以根据需要选择合适的构造方法。</p>
-<pre><code>注意：一旦提供了自定义构造方法，系统将不再提供默认构造方法。</code></pre><p>7.方法的重载<br>    概念：一个类中包含两个或以上的方法，它们的方法名相同，参数个数或参数类型不同，则称为方法的重载。<br>    判断依据：<br>        ○1必须在同一个类里<br>        ○2方法名相同<br>        ○3参数个数或参数类型不同<br>        ○4与方法返回值和方法修饰符没有关系</p>
-<p>8.static关键字<br>作用：static可用来修饰属性、方法和代码块。<br>    特点：被static修饰的变量和方法称为类变量、类方法。未被static修饰的属性和方法称为实例变量、实例方法。static修饰的变量属于这个类所有，即由这个类创建的所有对象共用一个static变量。<br>注意：类属性、类方法可以通过类名和对象名访问。实例属性、实例方法只能通过对象名访问。类方法只能访问类属性和其它类方法。静态方法中不能使用this和super关键字。</p>
-<p>9.this关键字<br>    this代表当前对象，即调用此方法的对象，不能在静态方法中使用。</p>
-<p>10.代码块和静态代码块<br>    语法：<br>        //代码块，每次创建对象时被执行<br>        {<br>            System.out.println(“代码块被运行”);<br>        }</p>
-<p>//静态代码块，在类加载的时候执行，只执行一次，一般用于类的初始化<br>static{<br>            System.out.println(“静态代码块运行”);<br>        }</p>
-<p>第三章 封装<br>1.封装的概念<br>    封装是指将对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息，而是通过该类所提供的方法实现对内部信息的操作访问。</p>
-<pre><code>被private修饰的成员，就被类私有化了，被私有化的成员，不能在类的外部访问，只能在类的内部使用。一般用于封装属性。</code></pre><p>2.封装的步骤<br>1、用private修饰属性（成员变量）<br>2、提供set,get方法，set方法完成对属性的赋值，get方法获取属性的值。<br>3、加入控制语句</p>
-<p>3.不同修饰符的访问权限</p>
-<p>4.封装的语法格式<br>    public class Person {<br>private String name;            //私有化属性<br>private int age;</p>
-<pre><code>public String getName() {        //获取属性的值
-    return name;
-}
-public void setName(String name) {        //对属性赋值
-    this.name = name;
-}
-public int getAge() {
-    return age;
-}
-public void setAge(int age) {
-    if(age&gt;0&amp;&amp;age&lt;=150){        //控制语句
-      this.age = age;
-    }else{
-      System.out.println(&quot;年纪不合法&quot;);
-    }
-}</code></pre><p>}</p>
-<p>第四章 继承<br>1.继承的说明<br>    子类继承了父类所有的属性和方法，只不过只能调用父类的非private属性和方法。java中的继承只支持单继承，一个子类只能继承一个父类，但允许多层继承。<br>    优点：提高了代码的重用性，提高了代码的可扩展性。</p>
-<p>2.语法<br>    修饰符 class 类名 extends 父类名{<br>        //属性定义<br>        //方法定义<br>}</p>
-<p>3.继承中的构造方法<br>    super关键字：<br>作用：1.充当父类的对象，直接调用父类的方法。2.调用父类的构造方法。</p>
-<pre><code>super();                //调用父类空的构造方法
-super(参数列表);        //调用父类有参的构造方法
-super.方法名(参数列表);//调用父类的方法
-
-注意：在创建子类对象的过程中，会先调用父类的构造方法，然后执行子类的构造方法。super关键字不能在静态方法中使用。</code></pre><p>4.重写<br>    概念：子类会继承父类中定义过的方法，但有时需要对继承的方法进行一些修改，即对父类的方法进行重写。</p>
-<pre><code>特点：1.重新写从父类继承过来的方法，以满足当前类的需求。2.格式上与父类方法声明保持一致，方法体不一样。</code></pre><p>第五章 多态<br>1.多态的概述<br>    多态可以理解为一个对象可以有多种形态，在调用时根据包含对象的实际类型（即实际的子类对象）来决定调用哪个方法。<br>    优点：可替换性、可扩充性、接口性、灵活性、简化性。</p>
-<p>2.多态的必要条件<br>    要有继承，要有重写，父类引用指向子类对象。</p>
-<p>3.具体的实现方式<br>    向上转型：<br>        &lt;父类型&gt; &lt;引用变量名&gt; = new &lt;子类型&gt;();</p>
-<pre><code>○1父类作为方法的参数：</code></pre><p>如果方法的参数是类类型，那么在调用方法传参时，传的参数就是对应类的对象，或者它子类的对象。<br>如果传入子类的对象，就发生了向上转型。</p>
-<pre><code>○2父类作为方法的返回值类型：
-    方法的返回值是类类型，那么返回值为对应类的对象或是它子类的对象。</code></pre><p>如果传入它子类的对象，就发生了向上转型</p>
-<p>注意：一旦向上转型，那么只能调用到父类声明过的方法，不能调用到自己独有的方法。</p>
-<pre><code>向下转型：
-    &lt;子类型&gt; &lt;引用变量名&gt; = (&lt;子类型&gt;) new &lt;父类的引用变量&gt;();</code></pre><p>将一个指向子类对象的父类引用赋给一个子类引用，即将父类类型转换为子类类型，称为向下转型，此时必须进行强制类型转换。<br>            将父类转换为子类，然后才可以调用子类特有的方法。</p>
-<p>4.instanceof关键字<br>//判断父类型对象是否为当前子类型<br>    if（&lt;父类引用变量&gt; instanceof &lt;子类类型&gt;）{<br>//把父类型引用变量，强制转换为子类类型，并赋值给子类引用变量<br>        &lt;子类类型&gt; &lt;子类引用变量&gt; =（&lt;子类类型&gt;）&lt;父类引用变量&gt;;<br>}</p>
-<pre><code>作用：判断对象的类型，向下转型时，判断父类的类型是哪个子类的对象。</code></pre><p>5.try-catch-finally语句<br>    try{<br>        //try里边放的是可能产生异常的代码, try会捕获异常</p>
-<p>}catch(){<br>    //catch是处理异常</p>
-<p>}finally{<br>    //无论是否发生异常，finally块中的代码总会被执行<br>}</p>
-<p>第六章 抽象<br>1.抽象类<br>    概念：被abstract修饰的类，称为抽象类。<br>    特点：无构造方法（没有对象），有抽象方法。<br>    注意：继承抽象类，必须重写抽象类中所有的抽象方法。<br>    语法：<br>public abstract class 类名{</p>
-<p>}</p>
-<p>2.抽象方法<br>概念：被abstract修饰的方法，称为抽象方法。<br>特点：抽象方法没有方法体，只有方法的声明。<br>语法：<br>public abstract 返回值类型 方法名(参数列表);</p>
-<p>3.final修饰符<br>    ○1被final修饰方法不能被重写。<br>○2被final修饰类不能被继承。<br>○3被final修饰的变量是常量，常量值不能被改变，常量用大写字符串表示。</p>
-<p>第七章 接口<br>1.接口的定义声明<br>public interface &lt;接口名&gt;{ </p>
-<p>}</p>
-<p>2.接口的作用<br>    把项目中需要完成的方法，先统一声明一下。</p>
-<p>3.接口的实现<br>    注意：接口中只有常量和抽象方法。<br>实现一个接口，必须重写接口中所有的抽象方法。否则必须定义为抽象类。<br>类在继承父类的同时又实现接口时，extends关键字必须位于implements关键字之前。接口不能继承类。<br>一个类只能有一个父类，称为单继承。<br>一个类可以实现多个接口，称为多实现。</p>
-<p>接口中的属性都会自动用public static final修饰，可简写为：<br>        常量类型 常量名 = 常量值;</p>
-<p>接口中的方法都会自动用public abstract修饰，可简写为：<br>        返回值类型 抽象方法名(参数列表);</p>
-<pre><code>修饰符 interface 接口名 extends 父接口1，……{    //接口继承接口
-    //常量定义
-    //方法定义</code></pre><p>}</p>
-<p>修饰符 class 类名 extends 父类名 implements 接口1，……{    //对象实现接口<br>    //类成员<br>}</p>
-<p>第八章 集合框架<br>1.集合概述<br>    集合用来存储对象，集合分为两大种，单列集合与双列集合。</p>
-<p>2.集合与数组的异同<br>    数组：长度固定，可存储基本数据也可存储对象，必须是相同类型的数据。<br>    集合：集合的长度可变，只能用于存储对象，对象可以是不同类型。</p>
-<p>3.单列集合<br>特点：单列集合只能存储一列数据。单列集合的总接口为Collection，它的两个子接口为List接口与Set接口。</p>
-<p>List接口：存储一组唯一(不允许重复)、无序的对象。<br>Set接口：存储一组不唯一(允许重复)、有序(以插入次序放置)的对象。</p>
-<p>ArrayList集合类实现了List接口，常用的方法有：<br>    add()        添加元素<br>    get()        获得元素<br>    size()        返回元素的个数<br>    remove()    删除元素<br>    HashSet集合类实现了Set接口，可通过add()方法添加对象。</p>
-<p>4.双列集合<br>    特点：双列集合能存储一组成对的“键-值对”，可通过key(键)找到value(值)，其中，key不允许重复(如果重复，最后的 “键-值对”将会替换掉原先的“键-值对”)，value允许重复。双列集合总接口为Map。</p>
-<pre><code>HashMap集合类实现了Map接口，常用的方法有：</code></pre><p>put()        向集合中添加键值对<br>get(key)    根据键，获取值，不存在则返回null<br>keySet()    返回键的集合<br>values()    返回值的集合<br>size()        返回元素个数<br>remove(key)    删除指定的键的“键-值对”</p>
-<p>5.封装类<br>    概念：为了让集合能存储基本数据类型的数据，java把八种基本数据类型封装成类。<br>    自动装箱、自动拆箱：集合存储基本数据类型的值时，会自动把基本数据类型的值，转换为对象，当取出使用的时候，又把对象转换为基本数据类型的值，这就称为自动装箱，自动拆箱。</p>
-<pre><code>基本数据类型：    对应的封装类：
-int              Integer
-byte            Byte
-short             Short
-long             Long
-float             Float
-double             Double
-char             Character</code></pre><p>boolean            Boolean</p>
-<p>6.Iterator迭代器<br>    作用：迭代器用来遍历Set集合类。<br>    语法：<br>//把Set集合中的值，复制到迭代器中<br>        Iterator 迭代器名 = Set集合名.iterator();<br>        //遍历迭代器<br>        while(迭代器名.hasNext()){<br>            System.out.println(迭代器名.next());<br>        }</p>
-<pre><code>//hasNext()    判断迭代器中是否有下一个元素，有返回true，无返回false
-//next()    获取下一个元素的值</code></pre><p>7.泛型<br>    作用：限制集合只能存储某一个类的对象。<br>    语法：<br>        ArrayList&lt;规定存储对象的类型&gt; 引用集合名 = new ArrayList&lt;…&gt;();<br>        Map&lt;规定键的类型，规定值的类型&gt;</p>
-<p>8.加强for循环<br>    作用:用来遍历数组或集合。遍历集合的前提是集合要添加泛型。<br>    语法：<br>        //把被遍历集合或数组中的元素，依次赋值给i<br>        for(被遍历对象存储的类型 i : 被遍历的集合或数组){<br>            System.out.println(i);<br>        }</p>
-<p>第九章 文件操作<br>1.File类<br>    File类是IO包中唯一代表磁盘文件本身的对象</p>
-<pre><code>//创建文件或文件夹对象,文件可以存在，也可以不存在
-File file = new File(&quot;&lt;文件路径&gt;&quot;);
-
-file. createNewFile();    //创建文件
-file. mkdir();            //创建文件夹
-file. mkdirs();            //一次创建多个文件夹(文件夹目录)
-file. isFile();            //判断是否是文件
-file. isDirectory();    //判断是否是文件夹
-file. exists();            //判断文件是否存在</code></pre><p>2.IO流<br>    IO流的分类：<br>        按方向分：<br>输入流：读取文件中的数据。<br>输出流：向文件中写入数据。<br>按一次操作的字节个数：<br>字节流：一次只能读一个字节，能处理所有类型的数据。<br>字符流：一次可能读多个字节，只能处理字符类型的数据。</p>
-<p>3.输出字节流OutputStream类<br>    通常使用它的子类FileOutputStream类</p>
-<p>4.输出字符流Writer<br>    通常使用它的子类FileWriter类</p>
-<p>5.输入字节流<br>6.输入字符流<br>7.输出字符缓冲流<br>8.输入字符缓冲流</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/1/" data-id="ck3mmx99u0000p0tf8cdp8f3n" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/10/23/hello-world/" class="article-date">
-  <time datetime="2019-10-23T02:45:36.080Z" itemprop="datePublished">2019-10-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/hello-world/" data-id="ck3mmx9a50004p0tfh5b83yu7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/" data-id="ck3mnr81b000bd8tfhuq9dx7z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1133,7 +2277,7 @@ file. exists();            //判断文件是否存在</code></pre><p>2.IO流<br>
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &amp;raquo;</a>
   </nav>
 
 </section>
@@ -1165,23 +2309,23 @@ file. exists();            //判断文件是否存在</code></pre><p>2.IO流<br>
       <ul>
         
           <li>
-            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/">JavaScript第七章重点总结</a>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E5%8D%81%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第十章总结</a>
           </li>
         
           <li>
-            <a href="/2019/12/01/xo-blog-master/">xo/blog (master)</a>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E5%85%AB%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/">JavaScript第八章重点总结</a>
           </li>
         
           <li>
-            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第一章总结</a>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC7%E7%AB%A0%E8%AF%BE%E5%A0%82%E6%80%BB%E7%BB%93/">JavaScript第7章课堂总结</a>
           </li>
         
           <li>
-            <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">http常见错误</a>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC6%E7%AB%A0%E5%A4%8D%E4%B9%A0/">JavaScript第6章复习</a>
           </li>
         
           <li>
-            <a href="/2019/11/21/jsp%E7%AC%AC%E5%85%AD%E6%AC%A1%E8%AF%BE/">jsp第六次课</a>
+            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第三章总结</a>
           </li>
         
       </ul>

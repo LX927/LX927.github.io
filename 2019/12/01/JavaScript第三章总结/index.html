@@ -5,14 +5,16 @@
   
 
   
-  <title>xo/blog (master) | Hexo</title>
+  <title>JavaScript第三章总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="xo&#x2F;blog (master)">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;xo-blog-master&#x2F;index.html">
+  <meta name="description" content="JavaScript第三章 运算符和表达式一元运算符：++、–（本质上就是加1或减1）前置和后置：前置先进行自加或自减，再赋值            后置先赋值，再进行自加或自减 算数运算符：+:正常加法运算，拼接作用-*&#x2F;%共同特点：如果不是Number类型，进行运算的时候会自动进行类型转换。var result = 100&#x2F;””;——–结果是Infinityvar result=100&#x2F;nu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript第三章总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JavaScript第三章 运算符和表达式一元运算符：++、–（本质上就是加1或减1）前置和后置：前置先进行自加或自减，再赋值            后置先赋值，再进行自加或自减 算数运算符：+:正常加法运算，拼接作用-*&#x2F;%共同特点：如果不是Number类型，进行运算的时候会自动进行类型转换。var result = 100&#x2F;””;——–结果是Infinityvar result=100&#x2F;nu">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-01T06:35:13.211Z">
+<meta property="og:updated_time" content="2019-12-01T07:01:12.549Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -60,10 +62,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-xo-blog-master" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JavaScript第三章总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/12/01/xo-blog-master/" class="article-date">
-  <time datetime="2019-12-01T06:35:13.000Z" itemprop="datePublished">2019-12-01</time>
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2019-12-01T06:58:27.000Z" itemprop="datePublished">2019-12-01</time>
 </a>
     
   </div>
@@ -74,7 +76,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      xo/blog (master)
+      JavaScript第三章总结
     </h1>
   
 
@@ -82,11 +84,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>JavaScript第三章 运算符和表达式<br>一元运算符：++、–（本质上就是加1或减1）<br>前置和后置：前置先进行自加或自减，再赋值<br>            后置先赋值，再进行自加或自减</p>
+<p>算数运算符：<br>+:正常加法运算，拼接作用<br>-<br>*<br>/<br>%<br>共同特点：如果不是Number类型，进行运算的时候会自动进行类型转换。<br>var result = 100/””;——–结果是Infinity<br>var result=100/null;——-结果也是Infinity</p>
+<p>var result=100%””;——-结果是NaN<br>var result=100%null;——-结果也是NaN</p>
+<p>关系运算符：<br>    &gt;=  &lt;  &lt;=  ==   !=   ===   ！==<br>    如果是不同数据类型之间用关系运算符比较，会自动转换成统一数据类型，再比较（Java中不同数据类型之间无法比较）<br>    两个字符串进行比较的话，取首字符的ASCII码表中对应的值进行比较。如果首字符相同的话，对下一位进行比较。<br>    ==和!=比较的时候如果数据类型不同的话，会先进行类型转换，然后再比较<br>    ===和!==比较的时候不会进行数据类型转换。</p>
+<p>逻辑运算符：<br>逻辑或、逻辑与的结果不一定是布尔值：<br>||:第一个操作数转换成true，返回第1个操作数。<br>  第一个操作数转换成false，返回第2个操作数。<br>&amp;&amp;:第一个操作数转换成true，返回第2个操作数。<br>  第一个操作数转换成false，返回第1个操作数。</p>
+<p>三目运算符：<br>判断条件表达式?表达式1:表达式2;<br>如果条件为true，执行表达式1，否则执行表达式2.</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/xo-blog-master/" data-id="ck3mnr81l000jd8tfas27eiuq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck3mnr8190009d8tf5scp72kd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -95,19 +103,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC6%E7%AB%A0%E5%A4%8D%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          JavaScript第七章重点总结
+          JavaScript第6章复习
         
       </div>
     </a>
   
   
-    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">JavaScript第一章总结</div>
+      <div class="article-nav-title">JavaScript第二章总结</div>
     </a>
   
 </nav>

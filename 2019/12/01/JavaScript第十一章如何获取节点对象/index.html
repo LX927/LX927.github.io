@@ -5,13 +5,16 @@
   
 
   
-  <title>Archives: 2019/10 | Hexo</title>
+  <title>JavaScript第十一章如何获取节点对象  | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;10&#x2F;index.html">
+  <meta name="description" content="第十一章  DOMDOM：文档对象模型，用来代表html中的任意元素。实现特效的本质：1.获取节点对象2.通过操作节点对象，实现对页面元素的操作。document就是html文档的入口。document.getElementById();通过id获取单个节点对象document.getElementByTagName();通过标签名获取一个节点对象数组。通过length属性可以遍历。documen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript第十一章如何获取节点对象 ">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;JavaScript%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第十一章  DOMDOM：文档对象模型，用来代表html中的任意元素。实现特效的本质：1.获取节点对象2.通过操作节点对象，实现对页面元素的操作。document就是html文档的入口。document.getElementById();通过id获取单个节点对象document.getElementByTagName();通过标签名获取一个节点对象数组。通过length属性可以遍历。documen">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-01T07:00:11.451Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -59,97 +62,63 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/10/24/xml%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2019-10-24T01:39:31.000Z" itemprop="datePublished">Oct 24</time>
+        <section id="main"><article id="post-JavaScript第十一章如何获取节点对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time datetime="2019-12-01T06:57:53.000Z" itemprop="datePublished">2019-12-01</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/24/xml%E7%AC%94%E8%AE%B0/">xml笔记</a>
+    <h1 class="article-title" itemprop="name">
+      JavaScript第十一章如何获取节点对象 
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  <time datetime="2019-10-23T11:17:47.000Z" itemprop="datePublished">Oct 23</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/jdbc%E7%AC%94%E8%AE%B0/">jdbc笔记</a>
-    </h1>
-  
+        <p>第十一章  DOM<br>DOM：文档对象模型，用来代表html中的任意元素。<br>实现特效的本质：1.获取节点对象2.通过操作节点对象，实现对页面元素的操作。<br>document就是html文档的入口。<br>document.getElementById();通过id获取单个节点对象<br>document.getElementByTagName();通过标签名获取一个节点对象数组。通过length属性可以遍历。<br>document.getElementByClassName();通过类名获取一个节点对象数组。通过length属性可以遍历。</p>
+<p>节点对象.nodeType  获取节点对象类型</p>
+<p>节点对象.childNodes;获取当前节点的所有子节点对象数组。<br>节点对象.firstChild;获取当前节点的第一个子节点<br>节点对象.lastChild;获取当前节点的最后一个子节点<br>节点对象.parentNode;获取当前节点的父节点<br>节点对象.nextSibling;获取当前节点的下一个兄弟节点<br>节点对象.previousSibling;获取当前节点的上一个兄弟节点</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/10/23/1/" class="archive-article-date">
-  <time datetime="2019-10-23T03:36:38.204Z" itemprop="datePublished">Oct 23</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/1/">1</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/10/23/hello-world/" class="archive-article-date">
-  <time datetime="2019-10-23T02:45:36.080Z" itemprop="datePublished">Oct 23</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1/" data-id="ck3mnr8180008d8tfh9gp1eeq" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+      
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          JavaScript第二章总结
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">JavaScript第七章重点总结</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
