@@ -61,6 +61,142 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/23/1/" class="article-date">
+  <time datetime="2019-10-23T03:36:38.204Z" itemprop="datePublished">2019-10-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/23/1/">1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>Java面向对象程序设计</code></pre><p>第一章 复习<br>1.数据类型<br>普通数据：bety、int、short、long、float、docuble、boolean、char<br>引用数据：String和各种对象构成的数据。</p>
+<p>第二章 类和对象<br>1.类和对象的概念<br>类：类是有共同特征，共同行为的一类事物的统称。<br>对象：现实世界客观存在的事物都可看作对象。</p>
+<p>2.面向过程和面向对象<br>    面向过程：分析出解决问题所需要的步骤，然后把这些步骤一步一步实现。<br>    面向对象：符合人类思考习惯的一种编程思想。这种思想是执行者变为指挥者。提高了代码的复用性及可扩展性。</p>
+<p>3.程序的执行过程<br>    从main方法第一行开始，执行到main方法最后一行结束。</p>
+<p>4.类的成员（组成部分）<br>    ○1成员变量<br>○2构造方法<br>○3成员方法<br>○4静态方法<br>○5代码块<br>○6静态代码块</p>
+<p>5.构造方法<br>    特点：构造方法的名称与类名相同，没有返回值类型，在没有构造方法时，系统会提供一个无参的方法体为空的构造方法。构造方法分为有参和无参两种。<br>    作用：调用带参的构造方法创建对象，在创建对象时执行一些初始化操作，如给成员属性赋初值。<br>    语法：<br>        public 构造方法名(){<br>            方法体;<br>}</p>
+<p>6.构造方法的重载<br>    概念及特点：方法名相同，参数个数或参数类型不同，称为构造方法的重载。<br>    作用：通过构造方法的重载来实现多种初始化行为，在创建对象时可以根据需要选择合适的构造方法。</p>
+<pre><code>注意：一旦提供了自定义构造方法，系统将不再提供默认构造方法。</code></pre><p>7.方法的重载<br>    概念：一个类中包含两个或以上的方法，它们的方法名相同，参数个数或参数类型不同，则称为方法的重载。<br>    判断依据：<br>        ○1必须在同一个类里<br>        ○2方法名相同<br>        ○3参数个数或参数类型不同<br>        ○4与方法返回值和方法修饰符没有关系</p>
+<p>8.static关键字<br>作用：static可用来修饰属性、方法和代码块。<br>    特点：被static修饰的变量和方法称为类变量、类方法。未被static修饰的属性和方法称为实例变量、实例方法。static修饰的变量属于这个类所有，即由这个类创建的所有对象共用一个static变量。<br>注意：类属性、类方法可以通过类名和对象名访问。实例属性、实例方法只能通过对象名访问。类方法只能访问类属性和其它类方法。静态方法中不能使用this和super关键字。</p>
+<p>9.this关键字<br>    this代表当前对象，即调用此方法的对象，不能在静态方法中使用。</p>
+<p>10.代码块和静态代码块<br>    语法：<br>        //代码块，每次创建对象时被执行<br>        {<br>            System.out.println(“代码块被运行”);<br>        }</p>
+<p>//静态代码块，在类加载的时候执行，只执行一次，一般用于类的初始化<br>static{<br>            System.out.println(“静态代码块运行”);<br>        }</p>
+<p>第三章 封装<br>1.封装的概念<br>    封装是指将对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息，而是通过该类所提供的方法实现对内部信息的操作访问。</p>
+<pre><code>被private修饰的成员，就被类私有化了，被私有化的成员，不能在类的外部访问，只能在类的内部使用。一般用于封装属性。</code></pre><p>2.封装的步骤<br>1、用private修饰属性（成员变量）<br>2、提供set,get方法，set方法完成对属性的赋值，get方法获取属性的值。<br>3、加入控制语句</p>
+<p>3.不同修饰符的访问权限</p>
+<p>4.封装的语法格式<br>    public class Person {<br>private String name;            //私有化属性<br>private int age;</p>
+<pre><code>public String getName() {        //获取属性的值
+    return name;
+}
+public void setName(String name) {        //对属性赋值
+    this.name = name;
+}
+public int getAge() {
+    return age;
+}
+public void setAge(int age) {
+    if(age&gt;0&amp;&amp;age&lt;=150){        //控制语句
+      this.age = age;
+    }else{
+      System.out.println(&quot;年纪不合法&quot;);
+    }
+}</code></pre><p>}</p>
+<p>第四章 继承<br>1.继承的说明<br>    子类继承了父类所有的属性和方法，只不过只能调用父类的非private属性和方法。java中的继承只支持单继承，一个子类只能继承一个父类，但允许多层继承。<br>    优点：提高了代码的重用性，提高了代码的可扩展性。</p>
+<p>2.语法<br>    修饰符 class 类名 extends 父类名{<br>        //属性定义<br>        //方法定义<br>}</p>
+<p>3.继承中的构造方法<br>    super关键字：<br>作用：1.充当父类的对象，直接调用父类的方法。2.调用父类的构造方法。</p>
+<pre><code>super();                //调用父类空的构造方法
+super(参数列表);        //调用父类有参的构造方法
+super.方法名(参数列表);//调用父类的方法
+
+注意：在创建子类对象的过程中，会先调用父类的构造方法，然后执行子类的构造方法。super关键字不能在静态方法中使用。</code></pre><p>4.重写<br>    概念：子类会继承父类中定义过的方法，但有时需要对继承的方法进行一些修改，即对父类的方法进行重写。</p>
+<pre><code>特点：1.重新写从父类继承过来的方法，以满足当前类的需求。2.格式上与父类方法声明保持一致，方法体不一样。</code></pre><p>第五章 多态<br>1.多态的概述<br>    多态可以理解为一个对象可以有多种形态，在调用时根据包含对象的实际类型（即实际的子类对象）来决定调用哪个方法。<br>    优点：可替换性、可扩充性、接口性、灵活性、简化性。</p>
+<p>2.多态的必要条件<br>    要有继承，要有重写，父类引用指向子类对象。</p>
+<p>3.具体的实现方式<br>    向上转型：<br>        &lt;父类型&gt; &lt;引用变量名&gt; = new &lt;子类型&gt;();</p>
+<pre><code>○1父类作为方法的参数：</code></pre><p>如果方法的参数是类类型，那么在调用方法传参时，传的参数就是对应类的对象，或者它子类的对象。<br>如果传入子类的对象，就发生了向上转型。</p>
+<pre><code>○2父类作为方法的返回值类型：
+    方法的返回值是类类型，那么返回值为对应类的对象或是它子类的对象。</code></pre><p>如果传入它子类的对象，就发生了向上转型</p>
+<p>注意：一旦向上转型，那么只能调用到父类声明过的方法，不能调用到自己独有的方法。</p>
+<pre><code>向下转型：
+    &lt;子类型&gt; &lt;引用变量名&gt; = (&lt;子类型&gt;) new &lt;父类的引用变量&gt;();</code></pre><p>将一个指向子类对象的父类引用赋给一个子类引用，即将父类类型转换为子类类型，称为向下转型，此时必须进行强制类型转换。<br>            将父类转换为子类，然后才可以调用子类特有的方法。</p>
+<p>4.instanceof关键字<br>//判断父类型对象是否为当前子类型<br>    if（&lt;父类引用变量&gt; instanceof &lt;子类类型&gt;）{<br>//把父类型引用变量，强制转换为子类类型，并赋值给子类引用变量<br>        &lt;子类类型&gt; &lt;子类引用变量&gt; =（&lt;子类类型&gt;）&lt;父类引用变量&gt;;<br>}</p>
+<pre><code>作用：判断对象的类型，向下转型时，判断父类的类型是哪个子类的对象。</code></pre><p>5.try-catch-finally语句<br>    try{<br>        //try里边放的是可能产生异常的代码, try会捕获异常</p>
+<p>}catch(){<br>    //catch是处理异常</p>
+<p>}finally{<br>    //无论是否发生异常，finally块中的代码总会被执行<br>}</p>
+<p>第六章 抽象<br>1.抽象类<br>    概念：被abstract修饰的类，称为抽象类。<br>    特点：无构造方法（没有对象），有抽象方法。<br>    注意：继承抽象类，必须重写抽象类中所有的抽象方法。<br>    语法：<br>public abstract class 类名{</p>
+<p>}</p>
+<p>2.抽象方法<br>概念：被abstract修饰的方法，称为抽象方法。<br>特点：抽象方法没有方法体，只有方法的声明。<br>语法：<br>public abstract 返回值类型 方法名(参数列表);</p>
+<p>3.final修饰符<br>    ○1被final修饰方法不能被重写。<br>○2被final修饰类不能被继承。<br>○3被final修饰的变量是常量，常量值不能被改变，常量用大写字符串表示。</p>
+<p>第七章 接口<br>1.接口的定义声明<br>public interface &lt;接口名&gt;{ </p>
+<p>}</p>
+<p>2.接口的作用<br>    把项目中需要完成的方法，先统一声明一下。</p>
+<p>3.接口的实现<br>    注意：接口中只有常量和抽象方法。<br>实现一个接口，必须重写接口中所有的抽象方法。否则必须定义为抽象类。<br>类在继承父类的同时又实现接口时，extends关键字必须位于implements关键字之前。接口不能继承类。<br>一个类只能有一个父类，称为单继承。<br>一个类可以实现多个接口，称为多实现。</p>
+<p>接口中的属性都会自动用public static final修饰，可简写为：<br>        常量类型 常量名 = 常量值;</p>
+<p>接口中的方法都会自动用public abstract修饰，可简写为：<br>        返回值类型 抽象方法名(参数列表);</p>
+<pre><code>修饰符 interface 接口名 extends 父接口1，……{    //接口继承接口
+    //常量定义
+    //方法定义</code></pre><p>}</p>
+<p>修饰符 class 类名 extends 父类名 implements 接口1，……{    //对象实现接口<br>    //类成员<br>}</p>
+<p>第八章 集合框架<br>1.集合概述<br>    集合用来存储对象，集合分为两大种，单列集合与双列集合。</p>
+<p>2.集合与数组的异同<br>    数组：长度固定，可存储基本数据也可存储对象，必须是相同类型的数据。<br>    集合：集合的长度可变，只能用于存储对象，对象可以是不同类型。</p>
+<p>3.单列集合<br>特点：单列集合只能存储一列数据。单列集合的总接口为Collection，它的两个子接口为List接口与Set接口。</p>
+<p>List接口：存储一组唯一(不允许重复)、无序的对象。<br>Set接口：存储一组不唯一(允许重复)、有序(以插入次序放置)的对象。</p>
+<p>ArrayList集合类实现了List接口，常用的方法有：<br>    add()        添加元素<br>    get()        获得元素<br>    size()        返回元素的个数<br>    remove()    删除元素<br>    HashSet集合类实现了Set接口，可通过add()方法添加对象。</p>
+<p>4.双列集合<br>    特点：双列集合能存储一组成对的“键-值对”，可通过key(键)找到value(值)，其中，key不允许重复(如果重复，最后的 “键-值对”将会替换掉原先的“键-值对”)，value允许重复。双列集合总接口为Map。</p>
+<pre><code>HashMap集合类实现了Map接口，常用的方法有：</code></pre><p>put()        向集合中添加键值对<br>get(key)    根据键，获取值，不存在则返回null<br>keySet()    返回键的集合<br>values()    返回值的集合<br>size()        返回元素个数<br>remove(key)    删除指定的键的“键-值对”</p>
+<p>5.封装类<br>    概念：为了让集合能存储基本数据类型的数据，java把八种基本数据类型封装成类。<br>    自动装箱、自动拆箱：集合存储基本数据类型的值时，会自动把基本数据类型的值，转换为对象，当取出使用的时候，又把对象转换为基本数据类型的值，这就称为自动装箱，自动拆箱。</p>
+<pre><code>基本数据类型：    对应的封装类：
+int              Integer
+byte            Byte
+short             Short
+long             Long
+float             Float
+double             Double
+char             Character</code></pre><p>boolean            Boolean</p>
+<p>6.Iterator迭代器<br>    作用：迭代器用来遍历Set集合类。<br>    语法：<br>//把Set集合中的值，复制到迭代器中<br>        Iterator 迭代器名 = Set集合名.iterator();<br>        //遍历迭代器<br>        while(迭代器名.hasNext()){<br>            System.out.println(迭代器名.next());<br>        }</p>
+<pre><code>//hasNext()    判断迭代器中是否有下一个元素，有返回true，无返回false
+//next()    获取下一个元素的值</code></pre><p>7.泛型<br>    作用：限制集合只能存储某一个类的对象。<br>    语法：<br>        ArrayList&lt;规定存储对象的类型&gt; 引用集合名 = new ArrayList&lt;…&gt;();<br>        Map&lt;规定键的类型，规定值的类型&gt;</p>
+<p>8.加强for循环<br>    作用:用来遍历数组或集合。遍历集合的前提是集合要添加泛型。<br>    语法：<br>        //把被遍历集合或数组中的元素，依次赋值给i<br>        for(被遍历对象存储的类型 i : 被遍历的集合或数组){<br>            System.out.println(i);<br>        }</p>
+<p>第九章 文件操作<br>1.File类<br>    File类是IO包中唯一代表磁盘文件本身的对象</p>
+<pre><code>//创建文件或文件夹对象,文件可以存在，也可以不存在
+File file = new File(&quot;&lt;文件路径&gt;&quot;);
+
+file. createNewFile();    //创建文件
+file. mkdir();            //创建文件夹
+file. mkdirs();            //一次创建多个文件夹(文件夹目录)
+file. isFile();            //判断是否是文件
+file. isDirectory();    //判断是否是文件夹
+file. exists();            //判断文件是否存在</code></pre><p>2.IO流<br>    IO流的分类：<br>        按方向分：<br>输入流：读取文件中的数据。<br>输出流：向文件中写入数据。<br>按一次操作的字节个数：<br>字节流：一次只能读一个字节，能处理所有类型的数据。<br>字符流：一次可能读多个字节，只能处理字符类型的数据。</p>
+<p>3.输出字节流OutputStream类<br>    通常使用它的子类FileOutputStream类</p>
+<p>4.输出字符流Writer<br>    通常使用它的子类FileWriter类</p>
+<p>5.输入字节流<br>6.输入字符流<br>7.输出字符缓冲流<br>8.输入字符缓冲流</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/10/23/1/" data-id="ck7lmzmdp0000jstfgczh7q0t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/10/23/hello-world/" class="article-date">
@@ -100,7 +236,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/23/hello-world/" data-id="ck7hn71c40008fotf51e7h8vk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/23/hello-world/" data-id="ck7lmzmep0008jstf90z2hmlk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,6 +282,10 @@
       <ul>
         
           <li>
+            <a href="/2020/03/10/%E8%BF%90%E7%BB%B4%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE/">运维第二节课</a>
+          </li>
+        
+          <li>
             <a href="/2020/03/07/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93%EF%BC%88%E8%BF%90%E7%BB%B4/">自我总结（运维)</a>
           </li>
         
@@ -159,10 +299,6 @@
         
           <li>
             <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第三章总结</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第二章总结</a>
           </li>
         
       </ul>

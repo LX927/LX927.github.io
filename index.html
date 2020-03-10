@@ -61,6 +61,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-运维第二节课" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/10/%E8%BF%90%E7%BB%B4%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE/" class="article-date">
+  <time datetime="2020-03-10T08:31:34.000Z" itemprop="datePublished">2020-03-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/10/%E8%BF%90%E7%BB%B4%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE/">运维第二节课</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>运维第二节课</code></pre><p>向文本写入内容：echo或者vim的方法<br>rm删除<br>强制rm-f<br>移动mv<br>打印不包含最后一行 1grep过滤 2head 3set -e<br>递归创建：mkdir -p</p>
+<blockquote>
+<p>重定向删除原来内容            &gt;&gt;附加重定向不删除内容<br>alias 查看和设置别名<br>unalias 取消别名<br>查看ett.txt文件内20行到30行的内容<br>cat ett.txt|head -30|tail-10<br>1-4个主分区，一个扩展分区<br>command not found的原因<br>1命令输入有误<br>2程序没有安装<br>3path变量未定义<br>服务的默认端口：ssh 22<br>        dns 53<br>``        ftp  21,20<br>        http 80<br>        mysql 3306<br>如何在linux中禁用selinux（linux安全性能，一般是关闭的）</p>
+</blockquote>
+<h1 id="vim-etc-selinux-config"><a href="#vim-etc-selinux-config" class="headerlink" title="vim/etc/selinux/config"></a>vim/etc/selinux/config</h1><p>selinux=disabled<br>常见文件系统的格式<br>EXT4 第四代扩展文件系统，RHEL6系列默认<br>XFS高级日志文件系统，RHEL7系统默认<br>SWAP交换空间（虚拟内存）<br>简述虚拟主机的若干类型<br>基于域名，基于端口，基于IP地址<br>使用top可以查看运行时间和cpu的负载<br>raid0条带模式，提高读写效率<br>raid1 镜像模式，实现磁盘设备的冗余备份<br>raid5 均衡模式，即提高效率也有备份<br>raid10镜像+条带备份与效率都比较完整<br>源码编译安装包的流程<br>1安装依赖包 gcc<br>2使用tar解压包<br>3使用./configure 完成系统监测ji配置<br>4.。。。。。<br>df-t查看已挂载的分区接口<br>Mount point 挂载点<br>linux的所有路径都是以根为开头的<br>bin可以被root和一般用户使用<br>/dev/rull回收站<br>etc yum rpm的配置文件的默认路径<br>home家目录</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/10/%E8%BF%90%E7%BB%B4%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE/" data-id="ck7lmzmf3000ijstfavkg2k2w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-自我总结（运维" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/07/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93%EF%BC%88%E8%BF%90%E7%BB%B4/" class="article-date">
@@ -94,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/07/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93%EF%BC%88%E8%BF%90%E7%BB%B4/" data-id="ck7hn71cw000ffotff3q8fo14" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/07/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93%EF%BC%88%E8%BF%90%E7%BB%B4/" data-id="ck7lmzmf0000gjstf4kz89tz0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E5%85%AB%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck7hn71ci000bfotfct3nbkqp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E5%85%AB%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck7lmzmer000ajstf1epx38g0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -177,7 +218,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC6%E7%AB%A0%E5%A4%8D%E4%B9%A0/" data-id="ck7hn71bx0003fotf4mj63qyq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC6%E7%AB%A0%E5%A4%8D%E4%B9%A0/" data-id="ck7lmzmed0002jstf0u4hghbo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7hn71bu0001fotfaoqcde4i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7lmzmen0006jstfe5ok6pmc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -308,7 +349,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7hn71c20007fotfdpxt9vtl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7lmzmeo0007jstf91eyhyzj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -347,7 +388,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1/" data-id="ck7hn71c10006fotfcmskhbbk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9%E5%AF%B9%E8%B1%A1/" data-id="ck7lmzmem0005jstfa59hhdg9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -393,7 +434,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck7hn71c00005fotf50ym4ga7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%83%E7%AB%A0%E9%87%8D%E7%82%B9%E6%80%BB%E7%BB%93/" data-id="ck7lmzmek0004jstfgr5ze6de" class="article-share-link">Share</a>
       
       
     </footer>
@@ -429,7 +470,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/xo-blog-master/" data-id="ck7hn71cz000ifotf23wtd7ug" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/xo-blog-master/" data-id="ck7lmzmex000fjstf0wlk1k00" class="article-share-link">Share</a>
       
       
     </footer>
@@ -472,45 +513,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7hn71bz0004fotf7606434t" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-http常见错误" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="article-date">
-  <time datetime="2019-12-01T06:03:44.000Z" itemprop="datePublished">2019-12-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">http常见错误</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我给大家讲的是http报错的20种错误信息代码。<br>我们打开页面发生错误时浏览器显示的错误信息代码。<br>状态代码可以指明具体请求是否已成功，还可以揭示请求失败的确切原因。<br>400 （错误请求） 服务器不理解请求的语法。<br>401 （未授权） 请求要求身份验证。 对于需要登录的网页，服务器可能返回此响应。<br>403 （禁止） 服务器拒绝请求。<br>404 （未找到） 服务器找不到请求的网页。<br>405 （方法禁用） 禁用请求中指定的方法。<br>406 （不接受） 无法使用请求的内容特性响应请求的网页。<br>407 （需要代理授权） 此状态代码与 401（未授权）类似，但指定请求者应当授权使用代理。<br>408 （请求超时） 服务器等候请求时发生超时。<br>409 （冲突） 服务器在完成请求时发生冲突。服务器必须在响应中包含有关冲突的信息。<br>410 （已删除） 如果请求的资源已永久删除，服务器就会返回此响应。<br>411 （需要有效长度） 服务器不接受不含有效内容长度标头字段的请求。<br>412 （未满足前提条件） 服务器未满足请求者在请求中设置的其中一个前提条件。<br>413 （请求实体过大） 服务器无法处理请求，因为请求实体过大，超出服务器的处理能力。<br>414 （请求的 URI 过长） 请求的 URI（通常为网址）过长，服务器无法处理。<br>415 （不支持的媒体类型） 请求的格式不受请求页面的支持。<br>416 （请求范围不符合要求） 如果页面无法提供请求的范围，则服务器会返回此状态代码。<br>417 （未满足期望值） 服务器未满足”期望”请求标头字段的要求。</p>
-<p>500 （服务器内部错误） 服务器遇到错误，无法完成请求。<br>501 （尚未实施） 服务器不具备完成请求的功能。例如，服务器无法识别请求方法时可能会返回此代码。<br>502 （错误网关） 服务器作为网关或代理，从上游服务器收到无效响应。<br>503 （服务不可用） 服务器目前无法使用（由于超载或停机维护）。通常，这只是暂时状态。<br>504 （网关超时） 服务器作为网关或代理，但是没有及时从上游服务器收到请求。<br>505 （HTTP 版本不受支持） 服务器不支持请求中所用的 HTTP 协议版本。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/01/http%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="ck7hn71cy000hfotfc8ikckje" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/01/JavaScript%E7%AC%AC%E4%B8%80%E7%AB%A0%E6%80%BB%E7%BB%93/" data-id="ck7lmzmef0003jstfe75mcg7k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -556,6 +559,10 @@
       <ul>
         
           <li>
+            <a href="/2020/03/10/%E8%BF%90%E7%BB%B4%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE/">运维第二节课</a>
+          </li>
+        
+          <li>
             <a href="/2020/03/07/%E8%87%AA%E6%88%91%E6%80%BB%E7%BB%93%EF%BC%88%E8%BF%90%E7%BB%B4/">自我总结（运维)</a>
           </li>
         
@@ -569,10 +576,6 @@
         
           <li>
             <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%B8%89%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第三章总结</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/01/JavaScript%E7%AC%AC%E4%BA%8C%E7%AB%A0%E6%80%BB%E7%BB%93/">JavaScript第二章总结</a>
           </li>
         
       </ul>
